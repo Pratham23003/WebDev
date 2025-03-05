@@ -1,0 +1,65 @@
+<!--Form recreation = https://youtu.be/k7ELO356Npo?t=14634 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+</head>
+<body>
+    <h1>Complex Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for = "name">Name</label>
+            <input type = "text" name = "nameField" id = "name" required>
+            <label for = "email">Email</label>
+            <input type = "email" name = "emailField" id = "email" required>
+            <label for = "phone">Phone</label>
+            <input type = "tel" name = "phoneField" id = "phone" required>
+            <label for = "date">Date of Birth</label>
+            <input type = "date" name = "datepicker" id = "date" required>
+            
+            <label for = "countries">Country </label>
+            <select name = "Country" id = "countries">
+                <option value="United States">United States</option>
+                <option value="India">India</option>
+                <option value="Russia">Russia</option>
+                <option value="United Kingdom">UK</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+            </select>
+
+            <label>Gender :</label>
+            <input type = "radio" name = "gender" id = "male" value = "Male">
+            <label for = "male">Male</label>
+            <input type = "radio" name = "gender" id = "female" value = "Female">
+            <label for = "female">Female</label>
+            <input type = "radio" name = "gender" id = "XBOX360" value = "Xbox360">
+            <label for = "XBOX360">Xbox360</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+            <label for = "st">Street</label>
+            <input type = "text" name = "street" id = "st">
+            <label for = "ct">City</label>
+            <input type = "text" name = "city" id = "ct" required>
+            <label for = "state">State</label>
+            <input type = "text" name = "state" id = "state" required>
+            <label for = "pin">Zip Code</label>
+            <input type = "text" name = "zipCode" id = "pin">
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for = "comments">Comments</label>
+            <textarea name = "comments" id = "comments"></textarea>
+            <label for = "TOS">I agree to the terms of service</label>
+            <input type = "checkbox" name = "termsOfService" id = "TOS">
+        </fieldset>
+
+        <button type = "submit">Submit</button>
+    </form>
+</body>
+</html>
