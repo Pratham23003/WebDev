@@ -9,6 +9,7 @@ This repository contains my daily progress as I learn HTML, CSS, and JavaScript.
 - **Day 5:** Created multiple forms, created two small projects - a Portfolio & a Product Catalogue
 - **Day 6:** Explored media in HTML (audio, video, GIFs, iframes), added a favicon, played around with autoplay, and wrapped up HTML with a final brainrot project.
 - **Day 7:** Started learning **CSS**, covered selectors, cascading, style sheets, and the three ways to apply CSS (inline, internal, and external).
+- **Day 8:** Explored typography, played around with color properties, and mastered the CSS box model to control spacing, borders, and layout.
 
 ## 📚 Resources I'm Using  
 
