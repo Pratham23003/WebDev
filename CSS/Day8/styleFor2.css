@@ -1,0 +1,19 @@
+/* style for 2.html */
+
+h1{
+    background-color: yellow;
+    color: brown;
+    text-align: center;
+}
+
+#pehlaPara{
+    background-color: rgb(163, 200, 158);
+}
+
+#dusraPara{
+    background-color: rgba(155, 97, 187,1);
+}
+
+#teesraPara{
+    background-color: #5cc5b7;
+}
