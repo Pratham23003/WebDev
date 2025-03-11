@@ -10,7 +10,8 @@ This repository contains my daily progress as I learn HTML, CSS, and JavaScript.
 - **Day 6:** Explored media in HTML (audio, video, GIFs, iframes), added a favicon, played around with autoplay, and wrapped up HTML with a final brainrot project.
 - **Day 7:** Started learning **CSS**, covered selectors, cascading, style sheets, and the three ways to apply CSS (inline, internal, and external).
 - **Day 8:** Explored typography, played around with color properties, and mastered the CSS box model to control spacing, borders, and layout.
-
+- **Day 9:** Learned about display properties (block, inline, inline-block), box sizing (content-box, border-box), and positioning (static, relative, absolute, fixed, sticky) to manage element layout and spacing effectively.
+- **Day 10:** Will Update...
 ## 📚 Resources I'm Using  
 
 - [Luv Babbar's MERN Stack Course](https://youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD&si=g0-zd-UP9EmVMnkc)  
