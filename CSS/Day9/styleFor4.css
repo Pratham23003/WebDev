@@ -1,0 +1,10 @@
+/* StyleSheet for 4.html */
+
+#container {
+    border: 2px solid black;
+    height: 8000px;
+}
+
+.img4 {
+    position: fixed;
+}

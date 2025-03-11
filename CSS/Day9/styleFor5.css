@@ -1,0 +1,24 @@
+/* StyleSheet for 5.html */
+
+#container {
+    background-color: antiquewhite;
+    border: 2px solid black;
+    height: 6000px;
+}
+
+.img2 {
+    position: sticky;
+    top: 500px;
+}
+
+.img4 {
+    position: fixed;
+    top: 700px;
+}
+
+#box {
+margin-top: 10px;
+border: 2px solid rgb(0,0,0);
+    height: 400px;
+    background-color: azure;
+}

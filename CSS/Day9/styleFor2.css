@@ -1,0 +1,14 @@
+/* StyleSheet for 2.html */
+
+#container {
+    border: 2px solid;
+}
+
+img {
+    margin: 10px;
+}
+
+.img2 {
+    position: relative;
+    top: 150px;
+}
