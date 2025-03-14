@@ -1,0 +1,6 @@
+/* styleSheet for 2.html */
+#viewport{
+    border: 1px solid black;
+    height: vh;
+    width: vw;
+}

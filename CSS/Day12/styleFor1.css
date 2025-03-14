@@ -1,0 +1,9 @@
+/* StyleSheet for 1.html */
+#parent{
+    border : 2px black solid;
+    background-color: paleturquoise;
+}
+#child{
+    border : 1px solid black;
+    width: 50%;
+}
