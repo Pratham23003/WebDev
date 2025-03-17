@@ -14,9 +14,10 @@ This repository contains my daily progress as I learn HTML, CSS, and JavaScript.
 - **Day 10 & 11:** Skipped.. (Assignments and stuff...)
 - **Day 12:** Explored CSS size units like px, em, rem, %, vh, vw. Understood the difference between physical and logical pixels, DPR, and PPI vs DPI. Wrapped up with float, clear, and overflow element positioning properites.
 - **Day 13:** Skipped.. (was working on other projects.)
-- **Day 14:** Started Flexbox, covering display: flex, main-axis & cross-axis concepts, justify-content, align-items, flex-wrap, and how to use the flex-flow shorthand
+- **Day 14:** Started Flexbox, covering display: flex, main-axis & cross-axis concepts, justify-content, align-items, flex-wrap, and how to use the flex-flow shorthand.
+- **Day 15:** Explored more Flexbox properties such as justify-content, align-items, and how they affect alignment.
 ## 📚 Resources I'm Using  
 
 - [Luv Babbar's MERN Stack Course](https://youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD&si=g0-zd-UP9EmVMnkc)  
-- [MDN Web Docs](https://developer.mozilla.org/)  
-- [W3Schools](https://www.w3schools.com/)  
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [W3Schools](https://www.w3schools.com/)
