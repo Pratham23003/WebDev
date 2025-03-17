@@ -1,0 +1,30 @@
+/* StyleSheet for 1.html */
+.container{
+    background-color: beige;
+    margin: 5px;
+    padding: 2px;
+    height: 800px;
+    width: 1200px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+#box1{
+    background-color: rgb(229, 123, 123);
+}
+#box2{
+    background-color: lightgreen;
+}
+#box3{
+    background-color: hsl(212, 65%, 54%);
+}
+#box4{
+    background-color: rgba(250, 250, 0, 0.305);
+}
