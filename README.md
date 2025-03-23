@@ -16,6 +16,9 @@ This repository contains my daily progress as I learn HTML, CSS, and JavaScript.
 - **Day 13:** Skipped.. (was working on other projects.)
 - **Day 14:** Started Flexbox, covering display: flex, main-axis & cross-axis concepts, justify-content, align-items, flex-wrap, and how to use the flex-flow shorthand.
 - **Day 15:** Explored more Flexbox properties such as justify-content, align-items, and how they affect alignment.
+- **Day 16-18:** Skipped.. (Assignments and stuff...)
+- **Day 19-21:** Completed Flexbox from start to finish: Covered container & item properties (justify-content, align-items, align-content), shorthand notations, and wrapped up with FruitBox Flex game.
+
 ## 📚 Resources I'm Using  
 
 - [Luv Babbar's MERN Stack Course](https://youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD&si=g0-zd-UP9EmVMnkc)  
