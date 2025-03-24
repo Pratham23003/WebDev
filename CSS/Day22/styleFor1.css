@@ -1,0 +1,15 @@
+/* styleSheet for 1.html */
+.box{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+@media (max-width: 100px) {      /* max-width jab tak 100px hai odo tak eh part chlu else uttla part chlu */
+    .box{
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        background-color: moccasin;
+    }
+}

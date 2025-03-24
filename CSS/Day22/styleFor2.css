@@ -1,0 +1,33 @@
+/* styleSheet for 2.html */
+.container{
+    background-color: beige;
+    margin: 2px;
+    border: 1px solid black;
+    height: 1400px;
+    width: 900px;
+    display: flex;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    background-color: lightpink;
+}
+
+/* for devices >640px devices this code will run */
+@media (min-width:640px){
+    .container{
+        flex-direction: column;
+        background-color: aquamarine;
+    }
+}
+
+/* for <640px devices the following code will run */
+@media (max-width:640px) {
+    .container{
+        flex-direction: row;
+        background-color: lightgoldenrodyellow;
+    }
+}
