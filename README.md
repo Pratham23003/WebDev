@@ -19,6 +19,8 @@ This repository contains my daily progress as I learn HTML, CSS, and JavaScript.
 - **Day 16-18:** Skipped.. (Assignments and stuff...)
 - **Day 19-21:** Completed Flexbox from start to finish: Covered container & item properties (justify-content, align-items, align-content), shorthand notations, and wrapped up with FruitBox Flex game.
 - **Day 22:** Explored CSS Media Queries for responsive design and learned how to use custom properties (CSS variables) for better styling control.
+- **Day 23-27:** Skipped.. (Assignments, Presentations, Hackathon on 27,28th March & other events....)
+- **Day 28 & 29:** Covered CSS shadows(text and box) and started with animations using keyframes.
 
 ## 📚 Resources I'm Using  
 
