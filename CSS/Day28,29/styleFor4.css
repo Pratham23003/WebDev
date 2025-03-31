@@ -1,0 +1,69 @@
+/* StyleSheet for 4.html */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    border: 5px solid black;
+}
+
+#box1{
+    width: 350px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 2px;
+    background-color: burlywood;
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 5s;
+    animation-iteration-count: infinte;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
+#box2{
+    width: 350px;
+    height: 230px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 2px;
+    background-color: burlywood;
+    position: relative;
+    animation-name: leftMovement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+
+@keyframes rightMovement {
+    from {
+        top: 0;
+        left: 0;
+    }
+
+    to {
+        top: 0;
+        left: 800px;
+    }
+}
+@keyframes leftMovement {
+    from {
+        top: 600px;
+        left: 900px;
+    }
+
+    to {
+        top: 600px;
+        right: 0px;
+    }
+}

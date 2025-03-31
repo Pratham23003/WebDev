@@ -1,0 +1,22 @@
+/* StyleSheet for 3.html */
+.container{
+    background-color: beige;
+    height: 650px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: lightpink;
+    border: 2px solid black;
+    width: 330px;
+    height: 330px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 10px 10px 10px teal;
+}
+#heading{
+    text-shadow: 10px 8px 10px purple;
+}

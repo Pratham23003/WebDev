@@ -1,0 +1,11 @@
+/* StyleSheet for 2.html */
+.container{
+    border: 1px solid black;
+    width: 90px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    box-shadow: 10px 5px 10px red;
+}
