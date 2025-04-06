@@ -1,0 +1,35 @@
+/* StyleSheet for 1.html */
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: beige;
+    border: 1px solid black;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 0ms;
+    transition-timing-function: linear;
+}
+.box:hover{
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+}
+a{
+    border: 1px solid black;
+    display: inline;
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: plum;
+}
+a:hover{
+    color: hotpink;
+}
+a:active{
+    color: lightseagreen;
+}
