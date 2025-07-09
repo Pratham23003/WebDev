@@ -1,31 +1,63 @@
-# Web Development Progress 🚀  
+# 🌐 Web Development Journey 🚀  
+> Learning by building. Consistently documenting my progress.
 
-This repository contains my daily progress as I learn HTML, CSS, and JavaScript.  
+This repository tracks my daily progress as I learn and build with **HTML**, **CSS**, and now **JavaScript** — with deployed projects and real-world mini-practice.
 
-## 📅 Progress Tracker  
-- **Day 1:** Learned about HTML structure, tags, elements, attributes, div, id, class, and basic navigation bars.  
-- **Day 2:** Learned about **HTML tables**, practiced `rowspan` & `colspan`, recreated some tables, and explored **HTML forms** (input fields, buttons, dropdowns).
-- **Day 3 & 4:** Couldn't do much (Assignments and stuff...)
-- **Day 5:** Created multiple forms, created two small projects - a Portfolio & a Product Catalogue
-- **Day 6:** Explored media in HTML (audio, video, GIFs, iframes), added a favicon, played around with autoplay, and wrapped up HTML with a final brainrot themed project.
-- **Day 7:** Started learning **CSS**, covered selectors, cascading, style sheets, and the three ways to apply CSS (inline, internal, and external).
-- **Day 8:** Explored typography, played around with color properties, and mastered the CSS box model to control spacing, borders, and layout.
-- **Day 9:** Learned about display properties (block, inline, inline-block), box sizing (content-box, border-box), and positioning (static, relative, absolute, fixed, sticky).
-- **Day 10 & 11:** Skipped.. (Assignments and stuff...)
-- **Day 12:** Explored CSS size units like px, em, rem, %, vh, vw. Understood the difference between physical and logical pixels, DPR, and PPI vs DPI. Wrapped up with float, clear, and overflow element positioning properites.
-- **Day 13:** Skipped.. (was working on other projects.)
-- **Day 14:** Started Flexbox, covering display: flex, main-axis & cross-axis concepts, justify-content, align-items, flex-wrap, and how to use the flex-flow shorthand.
-- **Day 15:** Explored more Flexbox properties such as justify-content, align-items, and how they affect alignment.
-- **Day 16-18:** Skipped.. (Assignments and stuff...)
-- **Day 19-21:** Completed Flexbox from start to finish: Covered container & item properties (justify-content, align-items, align-content), shorthand notations, and wrapped up with FruitBox Flex game.
-- **Day 22:** Explored CSS Media Queries for responsive design and learned how to use custom properties (CSS variables) for better styling control.
-- **Day 23-27:** Skipped.. (Assignments, Presentations, Hackathon on 27,28th March & other events....)
-- **Day 28 & 29:** Covered CSS shadows(text and box) and started with animations using keyframes.
-- **Day 30-33:** Skipped...
-- **Day34:** Learned about CSS transitions & pseudo-classes.
+---
 
-## 📚 Resources I'm Using  
+## 📆 July 2025 Progress Tracker
 
-- [Luv Babbar's MERN Stack Course](https://youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD&si=g0-zd-UP9EmVMnkc)  
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [W3Schools](https://www.w3schools.com/)
+| Date | Topic | Highlights |
+|------|-------|------------|
+| Jul 1 | CSS Basics | Revisited selectors, box model, margin/padding |
+| Jul 2 | CSS Positioning | Absolute, Relative, Fixed, Sticky |
+| Jul 3 | Flexbox in Depth | 🛠️ Deployed [First Project](https://pratham23003.github.io/css-first-project/) |
+| Jul 4 | CSS Media Queries | Created responsive layout |
+| Jul 5 | CSS Grid + Practice | Built layouts using `grid-template`, `gap`, `auto-fit` |
+| Jul 6 | Box Shadows & Text Shadows | CSS ✅ Finished |
+| Jul 7 | Animations, Transitions & Transforms | 🛠️ Deployed [GTA6 Landing Page](https://pratham23003.github.io/gta6-landing-page-cssProject2/) |
+| Jul 8 | JS Basics | Variables, Data Types & Operators |
+| Jul 9 | Conditionals, Control Flow & Functions | Practiced `if`, `switch`, function types |
+| Jul 10 | *(Ongoing...)* | DOM Manipulation coming up! |
+
+---
+
+## 🧠 Current Focus Areas
+
+- ✅ **HTML & CSS** (revised and applied)  
+- 🚀 **JavaScript** (in progress — core concepts, DOM, interactivity, and more)  
+- 📱 Responsive Design  
+- 🎯 Building and deploying mini projects
+
+---
+
+## 💼 Deployed Projects
+
+| Project | Description | Live Link | Repo Link |
+|--------|-------------|-----------|-----------|
+| 🎨 CSS First Project | A clean layout using flexbox and glassmorphism-based design | [Live](https://pratham23003.github.io/css-first-project/) | [Repo](https://github.com/Pratham23003/css-first-project) |
+| 🎮 GTA VI Landing Page | Modern and clean landing page with vanilla CSS | [Live](https://pratham23003.github.io/gta6-landing-page-cssProject2/) | [Repo](https://github.com/Pratham23003/gta6-landing-page-cssProject2) |
+
+---
+
+## 📚 Resources I'm Using
+
+- [Luv Babbar’s MERN Stack Course](https://youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD)  
+- [MDN Web Docs](https://developer.mozilla.org/)  
+- [W3Schools](https://www.w3schools.com/)  
+- [JavaScript.info](https://javascript.info/)
+
+---
+
+## 🚀 ForkYou.Dev Profile
+
+- [ForkYou.Dev](https://forkyou.dev/user/Pratham23003)
+
+---
+
+## 🧭 Slowly but Surely
+
+> **"Consistency beats intensity."**  
+> This repo is my personal accountability log — showing up daily, even if it’s just 30 minutes.
+
+---
