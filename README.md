@@ -18,7 +18,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 7 | Animations, Transitions & Transforms | 🛠️ Deployed [GTA6 Landing Page](https://pratham23003.github.io/gta6-landing-page-cssProject2/) |
 | Jul 8 | JS Basics | Variables, Data Types & Operators |
 | Jul 9 | Conditionals, Control Flow & Functions | Practiced `if`, `switch`, function types |
-| Jul 10 | *(Ongoing...)* | DOM Manipulation coming up! |
+| Jul 10 | Functions (Advanced) | Declarations, expressions, arrow functions, default & rest parameters, completed some problems. |
 
 ---
 
