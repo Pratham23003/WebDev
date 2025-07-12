@@ -1,7 +1,7 @@
 # 🌐 Web Development Journey 🚀  
 > Learning by building. Consistently documenting my progress.
 
-This repository tracks my daily progress as I learn and build with **HTML**, **CSS**, and now **JavaScript** — with deployed projects and real-world mini-practice.
+This repository tracks my daily progress as I learn and build with **HTML**, **CSS**, and now **JavaScript** — building stuff, breaking stuff, learning fast.
 
 ---
 
@@ -20,6 +20,8 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 9 | Conditionals, Control Flow & Functions | Practiced `if`, `switch`, function types |
 | Jul 10 | Functions (Advanced) | Declarations, expressions, arrow functions, default & rest parameters |
 | Jul 11 | Functions (Problems) | Completed some problems related to functions |
+| Jul 12 | Objects (In Depth) | Practiced advanced object operations, including 'pass by reference', explored shallow vs deep copies, and implemented both approaches.
+
 
 ---
 
@@ -28,7 +30,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 - ✅ **HTML & CSS** (revised and applied)  
 - 🚀 **JavaScript** (in progress — core concepts, DOM, interactivity, and more)  
 - 📱 Responsive Design  
-- 🎯 Building and deploying mini projects
+- 🎯 Building and deploying projects
 
 ---
 
