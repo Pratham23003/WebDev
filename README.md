@@ -21,7 +21,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 10 | Functions (Advanced) | Declarations, expressions, arrow functions, default & rest parameters |
 | Jul 11 | Functions (Problems) | Completed some problems related to functions |
 | Jul 12 | Objects (In Depth) | Practiced advanced object operations, including 'pass by reference', explored shallow vs deep copies, and implemented both approaches.
-
+| Jul 13 | Arrays (Basics) | Creating, accessing, and modifying elements; Implemented basic array methods like `push()`, `pop()`, `unshift()`, and `shift()` for adding and removing elements from ends/beginnings.
 
 ---
 
