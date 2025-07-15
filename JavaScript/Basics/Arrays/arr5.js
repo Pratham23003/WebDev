@@ -18,7 +18,7 @@ console.log("Subset 3 (-ve indices): ",subset3);
 //shallow copy of entire array
 const shallowCopyOfTracks = allTracks.slice();
 console.log("Shallow Copy of tracks :",shallowCopyOfTracks);
-console.log(`\n ----- Slice Method Array -------`);
+console.log(`\ ----- Slice Method Array end-------`);
 
 //splice
 console.log(`\n ------ Splice Method Array ------`);
@@ -38,7 +38,7 @@ console.log("Array after replacing using splice :",playlistToEdit);
 //remove all from startIndex: remove all elements from index2 to the end
 let remainingDeleted = playlistToEdit.splice(2);
 console.log("Remaining Deleted :",remainingDeleted);
-console.log(`\n ----- Splice Method Array -------`);
+console.log(`\ ----- Splice Method Array end-------`);
 
 //map
 console.log(`\n ----- Map Functions array method -------`);
@@ -53,7 +53,81 @@ let answerArray = numArray.map((number) => {
 })
 console.log("Map Function (number and index param) :",numberIndexPrint);
 console.log("Map Function (deep copy):",answerArray);
-console.log(`\n ----- Map Functions Array method -------`);
+console.log(`\ ----- Map Functions Array method end-------`);
 
 //filter
+console.log(`\n ----- Filter Array method -------`);
+let numArray2 = [10,25,30,11,13,17,18,22];
+let evenFilterArray = numArray2.filter((number) => {    //filters even numbers
+    if(number%2 === 0) return true;
+    else return false;
+})
+console.log("Og Array :", numArray2);
+console.log("New Filtered Array :",evenFilterArray);
 
+let anotherArray = [1,2,'hello', "webDev", null];
+let stringFilterArray = anotherArray.filter((element) => {
+    if(typeof(element) === "string") return true;
+    else return false;
+})
+console.log("Original Array with multiple values :",anotherArray);
+console.log("New Filtered Array with String :",stringFilterArray);
+console.log(`\ ----- Filter Array method end-------`);
+
+//reduce
+console.log(`\n ----- Reduce Array method -------`);
+let numArray3 = [10,20,30,40,50];
+let reduceOperationArray = numArray3.reduce((acc,curr) => {
+    return (acc + curr);
+},0)
+console.log("Reduce Operation Array :",reduceOperationArray);
+console.log(`\ ----- Reduce Array method end-------`);
+
+//sort 
+console.log(`\n ----- Sort Array method -------`);
+let arrUnsorted = [9,4,2,0,1,9];
+console.log("Unsorted Array :",arrUnsorted);
+let sortedArray = arrUnsorted.sort((a,b) => b - a);
+console.log("Sorted Array :",arrUnsorted);
+console.log(`\ ----- Sort Array method end -------`);
+
+//indexOf
+console.log(`\n ----- indexOf Array method start -------`);
+let newArray = [10,20,30,40,50,60];
+console.log(`Index Of 40 in this array : `,newArray.indexOf(40));
+console.log(`\ ----- indexOf Array method end -------`);
+
+//find
+console.log(`\n ----- find() Array method start -------`);
+let demoArray = [20,12,33,44,11,9,19,21];
+const findElement = demoArray.find((element) => element<10); //finds element based on a condition
+console.log("Element < 10: ",findElement);
+console.log(`\ ----- find() Array method end -------`);
+
+//lastIndexOf()
+console.log(`\n ----- lastIndexOf Array method start -------`);
+const genresWithDuplicates = ["Rock", "Pop", "Jazz", "Pop", "Classical"];
+console.log(genresWithDuplicates.lastIndexOf("Pop")); // Output: 3 (the last "Pop")
+console.log(genresWithDuplicates.lastIndexOf("Rock")); // Output: 0
+console.log(genresWithDuplicates.lastIndexOf("Blues")); // Output: -1
+console.log(` ----- lastIndexOf Array method end -------`);
+
+//includes()
+console.log(`\n ----- includes() Array method start -------`);
+const availableResolutions = ['720p', '1080p', '4K'];
+console.log(availableResolutions.includes("1080p"));
+console.log(availableResolutions.includes("2K"));
+console.log(`\ ----- includes() Array method end -------`);
+
+//concat()
+console.log(`\n ----- concat() Array method start -------`);
+const playlist1 = [1,2,3,4];
+const playlist2 = [4,5,6,7];
+const playlist3 = [7,8,9,10];
+
+const fullPlaylist = playlist1.concat(playlist2,playlist3);
+console.log("Full Playlist :", fullPlaylist);
+
+const combinedPlaylistUsingSpreadSyntax = [...playlist1,...playlist2,...playlist3]; //combining using spread syntax
+console.log("Combined using ...spread syntax :",combinedPlaylistUsingSpreadSyntax);
+console.log(` ----- concat() Array method end -------`);
