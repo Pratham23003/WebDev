@@ -23,6 +23,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 12 | Objects (In Depth) | Practiced advanced object operations, including 'pass by reference', explored shallow vs deep copies, and implemented both approaches.
 | Jul 13 | Arrays (Basics) | Creating, accessing, and modifying elements; Implemented basic array methods like `push()`, `pop()`, `unshift()`, and `shift()` for adding and removing elements from ends/beginnings.
 | Jul 14 | Arrays (Methods) | Reviewed advanced Array methods `(indexOf, includes, slice, splice, concat) etc.`
+| Jul 15 | Arrays (Iterations & Transformations) | implemented iteration methods and solved problems related to Array Methods |
 
 ---
 
