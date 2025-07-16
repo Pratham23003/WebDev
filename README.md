@@ -24,7 +24,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 13 | Arrays (Basics) | Creating, accessing, and modifying elements; Implemented basic array methods like `push()`, `pop()`, `unshift()`, and `shift()` for adding and removing elements from ends/beginnings.
 | Jul 14 | Arrays (Methods) | Reviewed advanced Array methods `(indexOf, includes, slice, splice, concat) etc.`
 | Jul 15 | Arrays (Iterations & Transformations) | implemented iteration methods and solved problems related to Array Methods |
-
+| Jul 16 | Arrays (Wrapped) | implemented `forEach`,`forIn`, `forOf` methods and studied about hoisting, call stack and temporal dead zone.
 ---
 
 ## 🧠 Current Focus Areas
