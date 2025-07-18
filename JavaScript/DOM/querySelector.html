@@ -1,0 +1,31 @@
+<!-- Query Selector selects the first html
+element that matches a specified CSS selector. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <script>
+        const firstParagraph = document.querySelector('p');
+        const highlightedParagraph = document.querySelector('.highlight');
+        const containerDiv = document.querySelector('.container');
+        const uniqueSpan = document.querySelector('#uniqueSpan');
+
+        console.log(firstParagraph);
+        console.log(highlightedParagraph);
+        console.log(containerDiv);
+        console.log(uniqueSpan);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="text">First Paragraph</p>
+        <p class="text-highlight">Second Paragraph</p>
+    </div>
+    <span id="uniqueSpan">A unique span</span>
+</body>
+
+</html>
