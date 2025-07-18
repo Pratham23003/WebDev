@@ -26,6 +26,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 15 | Arrays (Iterations & Transformations) | implemented iteration methods and solved problems related to Array Methods |
 | Jul 16 | Arrays (Wrapped) | implemented `forEach`,`forIn`, `forOf` methods and studied about hoisting, call stack and temporal dead zone.
 | Jul 17 | Classes & More JS | Explored and implemented Classes (constructors, methods, inheritance with `extends`/`super`). Explored Error Handling (`try`/`catch`/`throw`/`finally`) and built-in objects (`Math`, `Date`). |
+| Jul 18 | JS DOM | Started with DOM |
 ---
 
 ## 🧠 Current Focus Areas
