@@ -27,6 +27,8 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 16 | Arrays (Wrapped) | implemented `forEach`,`forIn`, `forOf` methods and studied about hoisting, call stack and temporal dead zone.
 | Jul 17 | Classes & More JS | Explored and implemented Classes (constructors, methods, inheritance with `extends`/`super`). Explored Error Handling (`try`/`catch`/`throw`/`finally`) and built-in objects (`Math`, `Date`). |
 | Jul 18 | JS DOM | Started with DOM |
+| Jul 19 | Didn't Code | Wasn;t able to code; broke ForkYou.dev streak due to being out all day without laptop |
+| Jul 20 | DOM Manipulation (CRUD) | Create, read, update, and delete HTML elements using JavaScript (getElementById, querySelector/All, textContent, innerHTML, classList, createElement, appendChild, remove). |
 ---
 
 ## 🧠 Current Focus Areas
