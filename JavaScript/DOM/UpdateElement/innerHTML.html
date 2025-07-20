@@ -1,0 +1,24 @@
+<!--Inner HTML is used to get/set content inside a tag(basically allows to access elements inside a tag)-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+
+</head>
+
+<body>
+    <div id="containerArea" class="containerArea">
+        <p>Content Inside The <code>containerArea</code></p>
+    </div>
+
+    <script>
+        const contentArea = document.getElementById('containerArea');
+        console.log((contentArea).innerHTML);
+        contentArea.innerHTML = `Content Inside the containerArea is changed using innerHTML`;
+    </script>
+</body>
+
+</html>

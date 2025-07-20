@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing Element</title>
+</head>
+
+<body>
+    <div>
+    Text Inside Div1
+        <div id="div1">
+            <p>First</p>
+            <h1>Second</h1>
+            <p id = "p3" >Third</p>
+        </div>
+    </div>
+    <script>
+        const div = document.querySelector('#div1');
+        const newElement = document.createElement('span');
+        newElement.textContent = "This is a new element created using createElement";
+        div.insertAdjacentElement('beforebegin', newElement);
+
+        //removing third para
+        const parent = document.querySelector('#div1');
+        const child = document.querySelector('#p3');
+        parent.removeChild(child);
+    </script>
+</body>
+
+</html>

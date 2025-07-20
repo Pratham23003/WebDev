@@ -1,0 +1,21 @@
+<!--OUTER HTML gets/sets the element itself, including its content-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outer HTML Property</title>
+</head>
+<body>
+    <div id="d">
+        <p>Content</p>
+        <p>Further Elaborated.</p>
+    </div>
+    <script>
+        const element1 = document.getElementById('d');
+        console.log(element1);
+        console.log((element1.outerHTML));
+        element1.outerHTML = `<section>This is a new section added using OUTER HTML.</section>`;
+    </script>
+</body>
+</html>

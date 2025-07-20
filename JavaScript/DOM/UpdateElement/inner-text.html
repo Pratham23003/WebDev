@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fdiv">
+        <p>
+            This is my first 
+            <span>text</span>
+        </p>
+        <p>This is my second para</p>
+    </div>
+    <script>
+        const element = document.querySelector('#fdiv');
+        console.log(element.innerText);
+        //innerText will log the text content as it is gonna
+        //appear in the viewport.
+        //It also respects line breaks and white space as rendered on the screen,
+        //unlike textContent which gives all the text regardless of visibility.
+    </script>
+</body>
+</html>
