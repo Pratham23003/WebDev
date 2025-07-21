@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text</title>
+</head>
+<body>
+    <div id="firstdiv" style = "background-color: aquamarine; padding: 2rem;">
+        First Div(styled using style.cssText method)
+        <p id="fpara" style="background-color: lightsalmon; padding: 1rem;">
+            First Para
+        </p>
+        <div id="sdiv" style="background-color: lightseagreen; padding: 1rem;">
+            <p id="spara"></p>
+        </div>
+    </div>
+    <script>
+        const paraElement = document.getElementById('spara');
+        console.log(paraElement);
+        const firstDivStyleGet = document.getElementById('firstdiv');
+        const getStyle = firstDivStyleGet.style.cssText;
+        console.log(getStyle);
+        const setStyle = firstDivStyleGet.style.cssText = "background-color: lightpink; color: purple;"
+
+    </script>
+</body>
+</html>

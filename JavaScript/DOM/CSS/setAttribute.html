@@ -1,0 +1,26 @@
+<!--setAttribute()-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="firstdiv" style = "background-color: aquamarine; padding: 2rem;">
+        First Div
+        <p id="fpara" style="background-color: lightsalmon; padding: 1rem;">
+            First Para
+        </p>
+        <div id="sdiv" style="background-color: lightseagreen; padding: 0.2rem;">
+            <p id="spara">Second Para</p>
+        </div>
+    </div>
+    <script>
+        const firstDiv = document.getElementById('firstdiv');
+        console.log(firstDiv);
+        const setElement = firstDiv.setAttribute('class', 'divClass');
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--classList is used to get class in form of array/list. it also consists add/remove/toggle/contains method-->
+<!--Class Name gets class name and can also be used to insert multiple classes.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="firstdiv" class="firstDiv" style = "background-color: aquamarine; padding: 2rem;">
+        First Div
+        <p id="fpara" class="firstClass secondClass" style="background-color: lightsalmon; padding: 1rem;">
+            First Para
+        </p>
+        <div id="sdiv" style="background-color: lightseagreen; padding: 0.2rem;">
+            <p id="spara">Second Para</p>
+        </div>
+    </div>
+    <script>
+        //log the class in form of array/list
+        console.log(fpara.classList);
+        //adding class with classList 
+        fpara.classList.add('thirdClass');
+        console.log(fpara);
+        //removing class with classList
+        fpara.classList.remove('firstClass');
+        console.log(fpara);
+        //toggle class with classList
+        fpara.classList.toggle('secondClass');
+        console.log(fpara);
+        //check if a class name is contained or not 
+        console.log(fpara.classList.contains('thirdClass'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fdiv" style = "background-color: aquamarine; padding: 2rem;">
+        First Div
+        <p id="fpara" style="background-color: lightsalmon; padding: 1rem;">
+            First Para
+        </p>
+        <div id="sdiv" style="background-color: lightseagreen; padding:0.8rem;">
+            Second Div
+            <p id = "spara">Second Para(Color Set to purple using style method)</p>
+        </div>
+    </div>
+    <script>
+        const paraElement = document.getElementById('spara');
+        console.log(paraElement);
+        paraElement.style.backgroundColor = "purple";
+    </script>
+</body>
+</html>
