@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudPlay Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        #app-header {
+            background-color: #4caf50;
+            color: whitesmoke;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #message-area {
+            margin: 10px;
+            background-color: #fff;
+            color: #555;
+            font-weight: 500;
+            text-align: center;
+            padding-top: 0.8rem;
+            border-radius: 0.5rem;
+            height: 3rem;
+            width: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #media-library {
+            height: 15rem;
+            width: 100;
+            border-radius: 0.5rem;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 2rem;
+        }
+
+        .media-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .media-item.highlight {
+            background-color: #e6f7ff;
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+        }
+
+        .media-item:last-child {
+            border-bottom: none;
+        }
+
+        .controls {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .controls button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 0.55rem;
+        }
+
+        .controls button:hover {
+            background-color: #0056b3;
+        }
+
+        .play-btn,
+        .delete-btn {
+            padding: 5px;
+            background-color: lightskyblue;
+            border-radius: 0.5rem;
+            color: white;
+        }
+
+        #add-media-form {
+            display: flex;
+            background-color: #fff;
+            height: 5rem;
+            margin: 10px;
+            border-radius: 0.5rem;
+            justify-content: space-between;
+        }
+
+        #new-media-name {
+            margin: 1rem;
+            width: 95%;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 1rem #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: text;
+        }
+
+        #add-media-btn {
+            margin: 1rem;
+            width: 10%;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #28a746c8;
+            color: white;
+        }
+
+        #add-media-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="app-header">
+        <h1>CloudPlay - Your Personal OTT</h1>
+    </header>
+
+    <main>
+        <section id="message-area">
+            Loading your media library...
+        </section>
+
+        <section id="media-library">
+            <h2>Your Files</h2>
+            <div id="media-list-container">
+                <div class="media-item" id="song-alpha">
+                    <span>Song Alpha.mp3</span>
+                    <div class="controls">
+                        <button class="play-btn" id = "play-btn-song-alpha">Play</button>
+                        <button class="delete-btn" id = "delete-btn-song-alpha">Delete</button>
+                    </div>
+                </div>
+                <div class="media-item" id="video-beta">
+                    <span>Video Beta.mp4</span>
+                    <div class="controls">
+                        <button class="play-btn" id="play-btn-video-beta">Play</button>
+                        <button class="delete-btn" id="delete-btn-video-beta">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="add-media-form">
+            <input type="text" id="new-media-name" placeholder="Enter new file name (e.g., video.mp4)">
+            <button id="add-media-btn">Add File</button>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
