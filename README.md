@@ -30,6 +30,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 19 | Didn't Code | Wasn't able to code; broke ForkYou.dev streak due to being out all day without laptop |
 | Jul 20 | DOM Manipulation (HTML) | Create, read, update, and delete HTML elements using JavaScript (getElementById, querySelector/All, textContent, innerHTML, classList, createElement, appendChild, remove). |
 | Jul 21 | DOM Manipulation (CSS) | Practiced DOM manipulation of CSS classes and styles using JavaScript: used `classList` (add/remove/toggle/contains), `className`, `setAttribute`, `.style` property, and `cssText` to dynamically update classes and inline styles. |
+| Jul 22 | DOM Manipulation | Completed core DOM manipulation techniques; Solved Problems related to DOM Manipulation. |
 
 ---
 
