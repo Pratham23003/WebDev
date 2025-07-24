@@ -32,6 +32,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 21 | DOM Manipulation (CSS) | Practiced DOM manipulation of CSS classes and styles using JavaScript: used `classList` (add/remove/toggle/contains), `className`, `setAttribute`, `.style` property, and `cssText` to dynamically update classes and inline styles. |
 | Jul 22 | DOM Manipulation | Completed core DOM manipulation techniques; Solved Problems related to DOM Manipulation. |
 | Jul 23 | Events and Listeners | Explored Events and Listener methods such as `addEventListener`,`removeEventListener`,`preventDefault` etc.|
+| Jul 24 | Events | Done with event handling (`addEventListener`), common event types (click, input, submit), and the `Event` object (`event.target`, `event.preventDefault()`, `closest()`). |
 ---
 
 ## 🧠 Current Focus Areas
