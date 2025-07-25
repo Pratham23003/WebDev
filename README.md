@@ -33,6 +33,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 22 | DOM Manipulation | Completed core DOM manipulation techniques; Solved Problems related to DOM Manipulation. |
 | Jul 23 | Events and Listeners | Explored Events and Listener methods such as `addEventListener`,`removeEventListener`,`preventDefault` etc.|
 | Jul 24 | Events | Done with event handling (`addEventListener`), common event types (click, input, submit), and the `Event` object (`event.target`, `event.preventDefault()`, `closest()`). |
+| Jul 25 | Performance | Explored (`performance.now()`), (`createDocumentFragment`), and reflow/repaint concept. 
 ---
 
 ## 🧠 Current Focus Areas
