@@ -1,0 +1,55 @@
+<!-- Document fragment is a lightweight document object that takes significantly 
+less number of reflows and repaints and improves the performance -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance.Now()</title>
+</head>
+
+<body>
+    <script>
+        //doc fragment
+        const initialTime = performance.now();
+        const fragment = document.createDocumentFragment();
+        for(let i = 1;i <= 100; i++){
+            let para = document.createElement('p');
+            para.textContent = "Para " + i;
+            //no reflow and no repaints for the below line 
+            fragment.appendChild(para);
+        }
+        //the below line takes 1 reflow and repaint
+        document.body.appendChild(fragment);
+        const finalTime = performance.now();
+        console.log(`Exexution Occured in ${finalTime-initialTime} seconds`);
+
+        //code1
+        const t1 = performance.now(); //starting 
+
+        for (let i = 1; i <= 100; i++) {
+            let para = document.createElement('p');
+            para.textContent = "This is 1st Code's para " + i;
+            document.body.appendChild(para);
+        }
+
+        const t2 = performance.now(); //ending
+        console.log(`Exexution Occured in ${t2-t1} seconds`);
+
+        //code2
+        const t3 = performance.now(); //starting
+        const myDiv = document.createElement('div');
+    
+        for(let i = 1;i <= 100; i++){
+            let para = document.createElement('p');
+            para.textContent = "This is 2nd Code's Para " + i;
+            myDiv.appendChild(para);
+        }
+        document.appendChild(myDiv);
+        const t4 = performance.now();
+        console.log(`Exexution Occured in ${t4-t3} seconds`);
+    </script>
+</body>
+
+</html>

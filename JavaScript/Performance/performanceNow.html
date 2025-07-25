@@ -1,0 +1,42 @@
+<!-- //performance.now is used to measure the time it takes to run a piece of code.
+//it measures performance by taking the time difference from the beginning of the code to its ending -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance.Now()</title>
+</head>
+
+<body>
+    <script>
+        //code1
+        const t1 = performance.now(); //starting 
+
+        for (let i = 1; i <= 100; i++) {
+            let para = document.createElement('p');
+            para.textContent = "This is para " + i;
+            document.body.appendChild(para);
+        }
+
+        const t2 = performance.now(); //ending
+        console.log(`Exexution Occured in ${t2-t1} seconds`);
+
+        //code2
+        const t3 = performance.now(); //starting
+        const myDiv = document.createElement('div');
+    
+        for(let i = 1;i <= 100; i++){
+            let para = document.createElement('p');
+            para.textContent = "This is 2nd Code's Para " + i;
+            myDiv.appendChild(para);
+        }
+
+        const t4 = performance.now();
+        console.log(`Exexution Occured in ${t4-t3} seconds`);
+    </script>
+</body>
+
+</html>
