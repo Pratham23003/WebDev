@@ -34,6 +34,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 23 | Events and Listeners | Explored Events and Listener methods such as `addEventListener`,`removeEventListener`,`preventDefault` etc.|
 | Jul 24 | Events | Done with event handling (`addEventListener`), common event types (click, input, submit), and the `Event` object (`event.target`, `event.preventDefault()`, `closest()`). |
 | Jul 25 | Performance | Explored (`performance.now()`), (`createDocumentFragment`), and reflow/repaint concept. 
+| Jul 26 | Core JS Concepts & Projects | Deep dive into 'Event Loop' (concurrency in single-threaded JS). Also working on projects on the side.|
 ---
 
 ## 🧠 Current Focus Areas
