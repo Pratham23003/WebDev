@@ -35,6 +35,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 24 | Events | Done with event handling (`addEventListener`), common event types (click, input, submit), and the `Event` object (`event.target`, `event.preventDefault()`, `closest()`). |
 | Jul 25 | Performance | Explored (`performance.now()`), (`createDocumentFragment`), and reflow/repaint concept. 
 | Jul 26 | Core JS Concepts & Projects | Deep dive into 'Event Loop' (concurrency in single-threaded JS). Also working on projects on the side.|
+| Jul 27 | Made my first JS Project | A Simple Colour Switcher app that switches bg-color of the body based on the selected color.|
 ---
 
 ## 🧠 Current Focus Areas
