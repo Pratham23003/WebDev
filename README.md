@@ -37,6 +37,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 26 | Core JS Concepts & Projects | Deep dive into 'Event Loop' (concurrency in single-threaded JS). Also working on projects on the side.|
 | Jul 27 | Made my first JS Project | A Simple Colour Switcher app that switches bg-color of the body based on the selected color.|
 | Jul 28 | Second JS Project | A Basic Quiz App with a progress bar at the bottom. |
+| Jul 29 | Third JS Project | A Simple BMI Calculator App |
 ---
 
 ## 🧠 Current Focus Areas
