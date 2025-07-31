@@ -39,6 +39,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 28 | Second JS Project | A Basic Quiz App with a progress bar at the bottom. |
 | Jul 29 | Third JS Project | A Simple BMI Calculator App |
 | Jul 30 | Fourth JS Project | A Simple Digital Clock in JS. |
+| Jul 31 | Fifth JS Project | Wrote the HTML/CSS for the project (Guess the Number).
 ---
 
 ## 🧠 Current Focus Areas
