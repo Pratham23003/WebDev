@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="screen active" id="start-screen">
+            <h1>Guess the Number!</h1>
+            <p>I have selected a number between 1 and 100. Can you guess it?</p>
+            <button class="start-btn" id="start-btn">Start</button>
+        </div>
+
+        <div class=screen id="game-area">
+            <h1>Guess the Number!</h1>
+            <div class="game-area-p-container"></div>
+            <p id="game-area-p1">Try and guess a random number between 1 and 100.</p>
+            <p id="game-area-p2">You have 10 attempts to guess the random number.</p>
+
+            <form>
+            <input type="number" id="user-guess-input" min="1" max="100">
+            <button id="submit-guess-btn" type="submit">Submit</button>
+            </form>
+
+            <div class="message-container">
+                <div id = "message-display-status"><span id ="current-choosen-number">Test</span></div>
+                <div id="previous-guess">Previous Guesses: <span id="previous-guess-span">0</span></div>
+                <div id="message-display">Guesses Remaining: <span id="remaining-guess-span">10</span></div>
+                <div id ="message-display-2">You have run out of Guesses.</div>
+                <div id = "message-display-3"><span id = "random-number-placeholder">0</span> was the number I chose. Better luck next time.</div>
+            </div>
+
+        </div>
+
+
+        <div id="restart-screen">
+            <button id="restart-btn" class="hidden">Restart Game</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

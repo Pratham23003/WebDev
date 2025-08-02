@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-image: radial-gradient(#444cf7 0.8px, #e5e5f7 0.8px);
+    background-size: 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #f0f2f5d8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#start-screen h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#start-screen p {
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#start-btn {
+    background-color: #444cf7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#start-btn:hover {
+    background-color: #0e19ed;
+}
+
+.screen{
+    display: none;
+}
+.screen.active{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.game-area-p-container{
+    margin-top: 1rem;
+}
+#game-area h1{
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+#game-area-p1{
+    font-size: 0.9rem;
+}
+#game-area-p2{
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+#user-guess-input {
+    width: 80px;
+    padding: 6.5px;
+    border: 1px solid #0e19ed;
+    border-radius: 4px;
+    font-size: 1.2em;
+    text-align: center;
+}
+#submit-guess-btn{
+    background-color: #444cf7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+#submit-guess-btn:hover{
+    background-color: #0e19ed;
+}
+
+#previous-guess {
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+#message-display {
+    margin-top: 4px;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+#message-display-2{
+    display: none;
+    margin-top: 1rem;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+#message-display-3{
+    display: none;
+    margin-top: 1rem;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+#current-choosen-number{
+    display: none;
+    margin-top: 1rem;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+#message-display-status{
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2em;
+}
+
+#restart-btn{
+    display: none;
+    justify-self: center;
+    background-color: #444cf7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+#restart-btn:hover{
+    background-color: #0e19ed;
+}
