@@ -40,6 +40,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 29 | Third JS Project | A Simple BMI Calculator App |
 | Jul 30 | Fourth JS Project | A Simple Digital Clock in JS. |
 | Jul 31 | Fifth JS Project | Wrote the HTML/CSS for the project (Guess the Number).
+| Aug 1-2 | Fifth JS Project | Wrote the JS for the game, everything works except restart button |
 ---
 
 ## 🧠 Current Focus Areas
