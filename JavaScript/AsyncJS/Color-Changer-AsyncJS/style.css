@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    overflow: hidden;
+}
+body{
+    background-color: #f1f1f1;
+}
+.button-container{
+    margin-top: 0.5rem;
+}
+button{
+    margin: 0.2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ecd7d4
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all ease-in 0.1s;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
