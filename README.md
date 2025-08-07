@@ -43,6 +43,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 1-2 | Fifth JS Project | Wrote the JS for the game, everything works except restart button |
 | Aug 3-4 | Async JS | Started Learning Async JS. Working on a new Async Project |
 | Aug 6 | Async JS | Bg-color switcher project made.|
+| Aug 7 | Async JS | Made my first API Call using (`XMLHttpRequest`) and working on another project using the same.| 
 
 ---
 
