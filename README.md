@@ -45,7 +45,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 6 | Async JS | Bg-color switcher project made.|
 | Aug 7 | Async JS | Made my first API Call using (`XMLHttpRequest`) and working on another project using the same.| 
 | Aug 8 | Async JS Project | Made a pretty basic Github card project using (`XMLHttpRequest`) and poking the github users API.|
-
+| Aug 10 | Async JS Project | Project Update - Handled a case where user doesn't exist. |
 ---
 
 ## 🧠 Current Focus Areas
