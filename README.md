@@ -46,7 +46,8 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 7 | Async JS | Made my first API Call using (`XMLHttpRequest`) and working on another project using the same.| 
 | Aug 8 | Async JS Project | Made a pretty basic Github card project using (`XMLHttpRequest`) and poking the github users API.|
 | Aug 10 | Async JS Project | Project Update - Handled a case where user doesn't exist. |
-| Aug 11-13 | Didn't do anything :( | College sucks........ |
+| Aug 11-13 | Didn't do anything :( | College ........ |
+| Aug 14 | Prototypes & Async JS | Explored prototypes, prototype chaining and wrote custom prototype methods. Learnt about Promises, async/await, and fetchAPI, ending with a small fetch project.
 ---
 
 
