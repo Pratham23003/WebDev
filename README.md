@@ -14,7 +14,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Jul 3 | Flexbox in Depth | 🛠️ Deployed [First Project](https://pratham23003.github.io/css-first-project/) |
 | Jul 4 | CSS Media Queries | Created responsive layout |
 | Jul 5 | CSS Grid + Practice | Built layouts using `grid-template`, `gap`, `auto-fit` |
-| Jul 6 | Box Shadows & Text Shadows | CSS ✅ Finished |
+| Jul 6 | Box Shadows & Text Shadows | CSS Done ✅ |
 | Jul 7 | Animations, Transitions & Transforms | 🛠️ Deployed [GTA6 Landing Page](https://pratham23003.github.io/gta6-landing-page-cssProject2/) |
 | Jul 8 | JS Basics | Variables, Data Types & Operators |
 | Jul 9 | Conditionals, Control Flow & Functions | Practiced `if`, `switch`, function types |
@@ -48,6 +48,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 10 | Async JS Project | Project Update - Handled a case where user doesn't exist. |
 | Aug 11-13 | Didn't do anything :( | College ........ |
 | Aug 14 | Prototypes & Async JS | Explored prototypes, prototype chaining and wrote custom prototype methods. Learnt about Promises, async/await, and fetchAPI, ending with a small fetch project.
+| Aug 15 | (`call, apply & bind`) | Learnt about (`call, apply & bind`) and started working on a basic color palette generator project. |
 ---
 
 
