@@ -44,6 +44,12 @@ h1::after {
     border-radius: 2px;
 }
 
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #generate-btn {
     background: linear-gradient(45deg, #667eea, #764bb2);
     color: whitesmoke;
@@ -63,6 +69,28 @@ h1::after {
 }
 
 #generate-btn:active {
+    transform: translateY(0px);
+}
+
+#keep-generating-btn{
+    background: linear-gradient(45deg, #667eea, #764bb2);
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 1.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+#keep-generating-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(79, 107, 232, 0.5);
+    transition: all 0.15s ease-out;
+}
+
+#keep-generating-btn:active {
     transform: translateY(0px);
 }
 
