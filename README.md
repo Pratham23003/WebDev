@@ -49,7 +49,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 14 | Prototypes & Async JS | Explored prototypes, prototype chaining and wrote custom prototype methods. Learnt about Promises, async/await, and fetchAPI, ending with a small fetch project.
 | Aug 15 | (`call, apply & bind`) | Learnt about (`call, apply & bind`) and started working on a basic color palette generator project. |
 | Aug 16 | JS Project | Wrote the HTML and CSS for the project. |
-
+| Aug 22 | Project | Completed the project after 3-4 days of not being able to code due to regular college. It's working finally. Will make it live soon. |
 ---
 
 
