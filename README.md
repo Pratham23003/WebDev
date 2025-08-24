@@ -50,6 +50,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 15 | (`call, apply & bind`) | Learnt about (`call, apply & bind`) and started working on a basic color palette generator project. |
 | Aug 16 | JS Project | Wrote the HTML and CSS for the project. |
 | Aug 22 | Project | Completed the project after 3-4 days of not being able to code due to regular college. It's working finally. Will make it live soon. |
+| Aug 23-24 | JS Project | Wrote the HTML, CSS & JS for the Simple Kanban Board. (Still figuring out the JS for it.) |
 ---
 
 
