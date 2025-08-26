@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: radial-gradient(125% 125% at 50% 10%,
+            #ffffff 40%,
+            #6633ee 100%);
+        /* light mode style (will be toggled from JS)*/
+    /* background: radial-gradient(
+              125% 125% at 50% 10%, 
+              #ffffff 40%, 
+              #6633ee 100%
+            ); */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-height: 90vh;
+    width: 100%;
+    max-width: 1280px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 2rem;
+}
+
+#header {
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    border: 1px solid rebeccapurple;
+}
+
+.header-title {
+    font-family: 'poppins';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.balance-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    text-align: center;
+    border: 1px solid brown;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    /* Glass effect from css glass */
+    /* From https://css.glass */
+    background: rgba(121, 91, 220, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(19.8px);
+    -webkit-backdrop-filter: blur(19.8px);
+    border: 1px solid rgba(138, 79, 210, 0.3);
+}
+
+.balance-heading {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#current-balance {
+    border: 1px solid black;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid plum;
+    padding: 2rem;
+}
+
+.income,
+.expenses {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.275);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(27, 5, 191, 0.131);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 3rem;
+    transition: transform 0.15s ease-in;
+    margin: 1rem;
+}
+.income:hover,
+.expenses:hover{
+    transform: translateY(-3px);
+}
+.income h3,
+.expenses h3{
+    justify-self: flex-start;
+    color: #08850a;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.expenses h3{
+    color: rgba(182, 45, 24, 0.856);
+}
+.icons-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+#income-amount,
+#expense-amount{
+    text-align:start;
+    font-size: 1.8rem;
+}
+.transaction-container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #2d3748;
+    height: 100%;
+}
+#transaction-list{
+    list-style: none;
+    max-height: 500px;
+    border: 1px solid lightseagreen;
+    overflow-y: auto;
+}
+/*Left @ 2:26:00 
+    TODO : Add the transition styling and fix minor UI issues.
+    Add JS
+*/
