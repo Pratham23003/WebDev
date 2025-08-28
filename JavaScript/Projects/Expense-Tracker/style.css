@@ -40,7 +40,7 @@ body {
     text-align: center;
     margin-top: 0.3rem;
     margin-bottom: 2rem;
-    border: 1px solid rebeccapurple;
+    padding: 1rem 0;
 }
 
 .header-title {
@@ -54,25 +54,24 @@ body {
 #logo {
     font-size: 1.8rem;
     font-weight: 800;
+    display: inline-block;
+    padding: 0.6rem;
+    margin-bottom: 0.4rem;
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 }
 
 .balance-container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     text-align: center;
-    border: 1px solid brown;
     padding: 2rem;
     margin-bottom: 2.5rem;
-    /* Glass effect from css glass */
-    /* From https://css.glass */
-    background: rgba(121, 91, 220, 0.1);
+    background: rgba(255, 255, 255, 0.18);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
-    backdrop-filter: blur(19.8px);
-    -webkit-backdrop-filter: blur(19.8px);
-    border: 1px solid rgba(138, 79, 210, 0.3);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .balance-heading {
@@ -84,34 +83,35 @@ body {
 }
 
 #current-balance {
-    border: 1px solid black;
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #1a202c;
 }
 
 .summary {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid plum;
-    padding: 2rem;
+    gap: 1.25rem;
+    padding: 1rem 0 0;
 }
 
 .income,
 .expenses {
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.275);
+    background: rgba(255, 255, 255, 0.28);
     border-radius: 1rem;
-    box-shadow: 0 4px 30px rgba(27, 5, 191, 0.131);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 3rem;
-    transition: transform 0.15s ease-in;
-    margin: 1rem;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 1.5rem;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 .income:hover,
 .expenses:hover{
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 .income h3,
 .expenses h3{
@@ -128,24 +128,179 @@ body {
     justify-content: space-between;
     font-size: 1.8rem;
 }
+
+/* percentage pill styling (id duplicated in HTML; acceptable for now) */
+#percentage{
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.55);
+    color: #1a202c;
+    align-self: center;
+}
 #income-amount,
 #expense-amount{
     text-align:start;
     font-size: 1.8rem;
 }
+/* .main-content{
+
+} */
 .transaction-container{
     display: flex;
-    justify-content: space-between;
-    border: 1px solid #2d3748;
+    border: 1px solid darkgoldenrod;
     height: 100%;
 }
 #transaction-list{
     list-style: none;
     max-height: 500px;
-    border: 1px solid lightseagreen;
     overflow-y: auto;
+    padding-right: 8px;
+    flex-grow: 1;
+}
+
+/* transaction list items */
+#transaction-list li{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* placeholder positive/negative accents (can be toggled via JS later) */
+#transaction-list li.income{
+    border-left: 6px solid rgba(16, 185, 129, 0.8);
+}
+#transaction-list li.expense{
+    border-left: 6px solid rgba(239, 68, 68, 0.85);
+}
+
+#transaction-list li .amount{
+    font-weight: 700;
+    letter-spacing: 0.2px;
 }
 /*Left @ 2:26:00 
     TODO : Add the transition styling and fix minor UI issues.
     Add JS
 */
+#transaction-list::-webkit-scrollbar{
+    width: 8px;
+}
+/* bg of the scroll bar */
+#transaction-list::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+/* draggable part of the scroll bar */
+#transaction-list::-webkit-scrollbar-thumb{
+    background-color: #cbd5e0;
+    border-radius: 4px;
+}
+#transaction-list::-webkit-scrollbar-thumb::hover{
+    background-color: #a0aec0;
+}
+
+/* transaction text containers (future-proofing) */
+.transaction{
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 20%;
+}
+
+/* form styles */
+.form-container{
+
+    background: rgba(255,255,255,0.22);
+    border: 1px solid rgba(255,255,255,0.32);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.form-container h2{
+    margin-bottom: 0.75rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label{
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #2d3748;
+}
+
+#description,
+#amount{
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgba(0,0,0,0.12);
+    background: rgba(255,255,255,0.85);
+    outline: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+#description:focus,
+#amount:focus{
+    border-color: #6633ee;
+    box-shadow: 0 0 0 4px rgba(102, 51, 238, 0.18);
+}
+
+#submit-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(45deg, #667eea, #764bb2);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 999px;
+    padding: 0.85rem 1.25rem;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+#submit-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px rgba(79, 107, 232, 0.35);
+}
+
+#submit-btn:active{
+    transform: translateY(0);
+}
+
+/* accessibility */
+#submit-btn:focus{
+    outline: 2px solid #764bb2;
+    outline-offset: 3px;
+}
+
+/* responsive tweaks */
+@media (max-width: 768px){
+    .summary{
+        grid-template-columns: 1fr;
+    }
+    #current-balance{
+        font-size: 2.25rem;
+    }
+}
+/* left at 2:30:00 */
+/* ToDo => *fix transaction UI
+        *containerize transaction section in glass 
+        *Add JS */
