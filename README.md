@@ -52,6 +52,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 22 | Project | Completed the project after 3-4 days of not being able to code due to regular college. It's working finally. Will make it live soon. |
 | Aug 23-24 | JS Project | Wrote the HTML, CSS & JS for the Simple Kanban Board. (Still figuring out the JS for it.) |
 | Aug 25-26 | JS Project | Done with the Kanban Board Project (fully working) & started with another project(Expense Tracker.) |
+| Aug 31 | JS Project | Completed the Expense Tracker Project (fully working) just need few tweaks. |
 ---
 
 
