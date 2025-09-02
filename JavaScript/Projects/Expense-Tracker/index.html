@@ -22,12 +22,12 @@
 
         <div class="balance-container">
             <h2 class="balance-heading">Current Balance</h2>
-            <h1 id="current-balance">₹0000</h1>
+            <h1 id="current-balance">₹00.00</h1>
             <div class="summary">
                 <div class="income">
                     <div class="icons-container">
                         <i id="income-icon" class="bi bi-cash-coin"></i>
-                        <span id="percentage">+0.0%</span>
+                        <span id = "income-percentage" class="percentage">+0.0%</span>
                     </div>
                     <h3>Income</h3>
                     <p id="income-amount">₹0.00</p>
@@ -35,7 +35,7 @@
                 <div class="expenses">
                     <div class="icons-container">
                         <i id = "expense-icon" class="bi bi-graph-down-arrow"></i>
-                        <span id="percentage">-0.0</span>
+                        <span id = "expense-percentage" class="percentage">-0.0</span>
                     </div>
                     <h3>Expenses</h3>
                     <p id="expense-amount">₹0.00</p>
@@ -48,28 +48,33 @@
             <div class="transaction-container">
                 <ul id="transaction-list">
                     <!--Will add Transactions through JS :-) -->
+                    <li class="transaction income">
+                        <span class="transaction-description">Credit</span>
+                        <span class="transaction-date">2025-08-28</span>
+                        <span class="transaction-amount">₹10,000</span>
+                    </li>
                     <li class="transaction expense">
-                        <span class="transaction-description">Salary</span>
+                        <span class="transaction-description">Debit</span>
                         <span class="transaction-date">2025-08-28</span>
                         <span class="transaction-amount">₹10,000</span>
                     </li>
                     <li class="transaction income">
-                        <span class="transaction-description">Salary</span>
+                        <span class="transaction-description">Credit</span>
+                        <span class="transaction-date">2025-08-28</span>
+                        <span class="transaction-amount">₹10,000</span>
+                    </li>
+                    <li class="transaction expense">
+                        <span class="transaction-description">Debit</span>
                         <span class="transaction-date">2025-08-28</span>
                         <span class="transaction-amount">₹10,000</span>
                     </li>
                     <li class="transaction income">
-                        <span class="transaction-description">Salary</span>
+                        <span class="transaction-description">Credit</span>
                         <span class="transaction-date">2025-08-28</span>
                         <span class="transaction-amount">₹10,000</span>
                     </li>
                     <li class="transaction expense">
-                        <span class="transaction-description">Salary</span>
-                        <span class="transaction-date">2025-08-28</span>
-                        <span class="transaction-amount">₹10,000</span>
-                    </li>
-                    <li class="transaction expense">
-                        <span class="transaction-description">Salary</span>
+                        <span class="transaction-description">Debit</span>
                         <span class="transaction-date">2025-08-28</span>
                         <span class="transaction-amount">₹10,000</span>
                     </li>

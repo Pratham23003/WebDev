@@ -22,11 +22,14 @@ function addTransactions(event){
     transactions.push({
         id: Date.now(),
         description,
-        amount
+        amount,
+        date: new Date().toLocaleDateString()
     });
     //setting it to localStorage as well
     localStorage.setItem("transactions", JSON.stringify(transactions));
     
+    console.log('pre-appending : ',transactionListEl);
+
     updateTransactionList();
     updateSummary();
 
@@ -40,14 +43,15 @@ function updateTransactionList(){
     const sortedTransactions = [...transactions].reverse();
     console.log('postSorting : ',sortedTransactions);
 
+    console.log(transactionListEl);
     sortedTransactions.forEach((transaction) => {
         const transactionEl = createTransactionElement(transaction);
-        console.log(transactionEl);
         transactionListEl.appendChild(transactionEl);
-        console.log(transaction);
-        
+        console.log('post-appending : ',transactionListEl);
+
     })
 }
+
 
 function createTransactionElement(transaction){
     const li = document.createElement('li');
@@ -55,7 +59,7 @@ function createTransactionElement(transaction){
     li.classList.add(transaction.amount > 0 ? "income" : "expense")
     li.innerHTML = `
         <span class="transaction-description">${transaction.description}</span>
-        <span class="transaction-date">${transaction.id}</span>
+        <span class="transaction-date">${transaction.date}</span>
         <span class="transaction-amount">${transaction.amount}
             <button class = "delete-btn" onclick = "removeTransaction(${transaction.id})">x</button>
         </span>
@@ -73,15 +77,23 @@ function updateSummary(){
     .filter((transaction) => transaction.amount < 0)
     .reduce((acc, transaction) => acc + transaction.amount, 0);
 
+    const incomePercentage = (balance/income)*100;
+    const expensesPercentage = (balance/expenses)*100;
+
     //updating the UI
     balanceEl.textContent = balance;
     incomeAmountEl.textContent = income;
     expenseAmoutnEl.textContent = expenses;
+
 }
 function removeTransaction(id){
-    transactions = transaction.filter(transaction => transaction.id !== id);
+    transactions = transactions.filter(transaction => transaction.id !== id);
     localStorage.setItem("transactions", JSON.stringify(transactions));
 
     updateTransactionList();
     updateSummary();
 }
+updateTransactionList();
+updateSummary();
+// just for clearing the localStorage temporarily for debugging
+// localStorage.clear();
