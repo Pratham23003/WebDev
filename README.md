@@ -54,6 +54,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 25-26 | JS Project | Done with the Kanban Board Project (fully working) & started with another project(Expense Tracker.) |
 | Aug 31 | JS Project | Completed the Expense Tracker Project (fully working) just need few tweaks. |
 | Sept 2 | JS Project | Fixed minor bugs in the Expense Tracker Project and wrote HTML, CSS for another project (Bookmark Saver)."
+| Sept 3 | JS Project | Wrote JS for Bookmark Saver. Project not complete yet. |
 ---
 
 
