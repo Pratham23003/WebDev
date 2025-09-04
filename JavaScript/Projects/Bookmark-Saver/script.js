@@ -26,23 +26,37 @@ function addBookmarks(event) {
   // console.log(siteURL);
 
   //pushing values to the bookmarks array
-  bookmarks.push({
-    id: Date.now,
-    siteName,
-    siteURL,
-  });
-  //also updating the localStorage as well
-  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
-  //   console.log("About to execute update UI");
-  updateUI(siteName, siteURL);
-
-  //clear the values after function call
-  formEl.reset();
+  if (!siteName || !siteURL) {
+    alert("Input fields cannot be empty");
+    return;
+  } 
+  else {
+    bookmarks.push({
+      id: Date.now,
+      siteName,
+      siteURL,
+    });
+    //also updating the localStorage as well
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    //console.log("About to execute update UI");
+    updateUI(siteName, siteURL);
+    //clear the values after function call
+    formEl.reset();
+  } 
 }
 function updateUI(siteName, siteURL) {
   const sortedBookmarks = [...bookmarks].reverse();
-  sortedBookmarks.forEach((bookmark) => {
+  console.log(sortedBookmarks);
+  sortedBookmarks.forEach((bookmark, index) => {
+    console.log(`${bookmark}: ${index}`);
     const bookmarkLI = createBookmarkLI(bookmark);
-    
+    listContainer.appendChild(bookmarkLI);
   });
 }
+
+function createBookmarkLI(bookmark) {
+  console.log(`BookMark Recieved : ${bookmark}`);
+
+}
+
+localStorage.clear();
