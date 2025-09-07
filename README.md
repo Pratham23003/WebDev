@@ -55,6 +55,7 @@ This repository tracks my daily progress as I learn and build with **HTML**, **C
 | Aug 31 | JS Project | Completed the Expense Tracker Project (fully working) just need few tweaks. |
 | Sept 2 | JS Project | Fixed minor bugs in the Expense Tracker Project and wrote HTML, CSS for another project (Bookmark Saver)."
 | Sept 3 | JS Project | Wrote JS for Bookmark Saver. Project not complete yet. |
+| Sept 7 | JS Project | Completed the Bookmark Saver project.|
 ---
 
 
