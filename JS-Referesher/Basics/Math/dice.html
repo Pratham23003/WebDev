@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #roll{
+            font-size: 5rem;     
+        }
+        #rollBtn{
+            padding: 0.5rem;
+        }
+        #rollBtn:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="roll">
+            <h1 id="roll">0</h1>
+        </div>
+        <div class="rollBtn">
+            <button id="rollBtn" type ="button">Roll</button>
+        </div>
+    </div>
+    <script src="dice.js"></script>
+</body>
+</html>
