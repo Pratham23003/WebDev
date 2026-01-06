@@ -2,36 +2,43 @@ let tries = 5;
 let currentTries = 0;
 let running = true;
 let guessNum = 0;
+const randomNum = generateRandomNum();
 
-while(running){
-    const randomNum = generateRandomNum();
-    guessNum = window.prompt("Guess a number between 1 and 100. You get 5 Tries.");
-    guessNum = Number(guessNum);
-    console.log(typeof guessNum, guessNum);
-    
-    if(isNaN(gNum) || gNum < 1 || gNum > 100){
-        window.alert("Na kare janaab Na kare!");
-    }
-    
-    if(guessNum > randomNum){
-        window.alert("Guessed Number is more than ", randomNum);
-        tries--;
-        currentTries++;
-    }
-    if(guessNum < randomNum){
-        window.alert("Guessed Number is less than ", randomNum);
-    }
-    if(guessNum == randomNum){
-        window.alert("Correct! You Won");
-    }
-    else if(tries == 0){
-        window.alert("Hatt BKL! Incorrect");
-    }
+while (running) {
+  guessNum = window.prompt(
+    "Guess a number between 1 and 100. You get 5 tries."
+  );
 
+  guessNum = Number(guessNum);
+
+  // input validation
+  if (isNaN(guessNum) || guessNum < 1 || guessNum > 100) {
+    window.alert("Na kare janaab Na kare!");
+    continue;
+  }
+
+  currentTries++;
+
+  if (guessNum > randomNum) {
+    window.alert(`Too High! Tries left: ${tries - currentTries}`);
+  } 
+  else if (guessNum < randomNum) {
+    window.alert(`Too Low! Tries left: ${tries - currentTries}`);
+  } 
+  else {
+    window.alert(
+      `Correct! You won \nAnswer: ${randomNum}\nAttempts: ${currentTries}`
+    );
+    running = false;
+    break;
+  }
+
+  if (currentTries === tries) {
+    window.alert(`Tries khatam !\nCorrect number was ${randomNum}`);
+    running = false;
+  }
 }
-function generateRandomNum(){
-    const randomNum = parseInt(Math.random()*100+1);
-    console.log(randomNum);
-    return randomNum;
-}
 
+function generateRandomNum() {
+  return Math.floor(Math.random() * 100) + 1;
+}
