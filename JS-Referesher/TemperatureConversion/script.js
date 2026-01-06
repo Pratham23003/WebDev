@@ -15,7 +15,7 @@ submitBtn.addEventListener("click", (e) => {
         }
         let C2Fvalue = calcC2F();
         resultBox.style.display="block";
-        resultBox.textContent=`${textBoxVal} -> ${C2Fvalue}`;
+        resultBox.textContent=`${textBoxVal} -> ${C2Fvalue} + °C`;
     }
     else if (F2C_radioBtn.checked){
         function calcF2C(){
@@ -23,7 +23,7 @@ submitBtn.addEventListener("click", (e) => {
         }
         let F2Cvalue = calcF2C();
         resultBox.style.display="block";
-        resultBox.textContent=`${textBoxVal} -> ${F2Cvalue}`;
+        resultBox.textContent=`${textBoxVal} -> ${F2Cvalue} + °F`;
     }
   
 });
