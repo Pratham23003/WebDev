@@ -24,3 +24,7 @@ function changeState(){
     cardAge.textContent = ageData.value;
     cardEmail.textContent = emailData.value;
 }
+
+function changePhoto(fd){
+    console.log(cardProfile.innerHTML = `<img id="user-profile" class="user-profile" src="${fd.files[0].name}" alt="User Avatar" height="120px" width="120px">`);
+}
