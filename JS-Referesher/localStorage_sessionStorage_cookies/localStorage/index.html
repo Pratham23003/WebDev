@@ -1,0 +1,162 @@
+<!-- dark mode toggle using localStorage -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle (localStorage)</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --card: #ffffff;
+            --text: #0f172a;
+            --muted: #475569;
+            --accent: #2563eb;
+            --toggle-bg: #e6edf9;
+            --knob: #ffffff;
+            --shadow: rgba(2, 6, 23, 0.06);
+        }
+
+        html[data-theme="dark"] {
+            --bg: #0b1220;
+            --card: #071021;
+            --text: #e6eef8;
+            --muted: #9aa7b6;
+            --accent: #60a5fa;
+            --toggle-bg: #1f2937;
+            --knob: #0b1220;
+            --shadow: rgba(2, 6, 23, 0.35);
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px
+        }
+
+        .card {
+            width: 100%;
+            max-width: 560px;
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: 0 8px 20px var(--shadow)
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px
+        }
+
+        .heading {
+            margin: 0 0 8px;
+            font-weight: 600;
+            font-size: 1.05rem
+        }
+
+        .sub {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.95rem
+        }
+
+        /* Toggle */
+        .toggle {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .toggle__label {
+            display: flex;
+            flex-direction: column
+        }
+
+        .switch {
+            width: 56px;
+            height: 32px;
+            background: var(--toggle-bg);
+            border-radius: 999px;
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: background .18s ease
+        }
+
+        .switch__knob {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--knob);
+            box-shadow: 0 4px 10px rgba(2, 6, 23, 0.12);
+            transition: left .18s cubic-bezier(.2, .9, .2, 1), transform .18s
+        }
+
+        .switch:active .switch__knob {
+          transform: scale(0.9);
+        }
+
+        html[data-theme="dark"] .switch {
+            background: linear-gradient(90deg, #0f172a, #253244)
+        }
+
+        html[data-theme="dark"] .switch__knob {
+            left: calc(100% - 28px);
+            background: var(--knob)
+        }
+
+        .hint {
+            font-size: 0.85rem;
+            color: var(--muted)
+        }
+
+        /* Utility */
+        .visually-hidden {
+            position: absolute !important;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+            white-space: nowrap
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="row">
+            <div>
+                <h1 class="heading">Appearance</h1>
+                <p class="sub">Toggle dark mode. The script should persist selection to localStorage.</p>
+            </div>
+            <div class="toggle" aria-hidden="false">
+                <div class="toggle__label">
+                    <span class="hint">Dark mode</span>
+                </div>
+                <button id="themeToggle" class="switch" aria-pressed="false" aria-label="Toggle theme">
+                    <span class="switch__knob" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src ="script.js"></script>
+</html>
