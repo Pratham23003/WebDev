@@ -1,0 +1,136 @@
+/* Simple, modern styles for email/password validator */
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: Inter, system-ui, Arial, sans-serif;
+    background: #f4f7fb;
+    color: #0b2545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px
+}
+
+.container {
+    width: 100%;
+    max-width: 420px
+}
+
+.card {
+    background: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 22px rgba(18, 38, 63, 0.08)
+}
+
+.title {
+    margin: 0 0 18px;
+    font-size: 1.25rem
+}
+
+.field {
+    margin-bottom: 14px
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.9rem
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e6eef7;
+    border-radius: 8px;
+    background: #fbfdff;
+    font-size: 1rem;
+    transition: box-shadow .15s, border-color .15s
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(36, 104, 255, 0.06);
+    border-color: #2468ff
+}
+
+.password-wrap {
+    position: relative
+}
+
+.toggle {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #2468ff;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px
+}
+
+.error {
+    display: block;
+    margin-top: 6px;
+    color: #e74c3c;
+    font-size: 0.85rem;
+    min-height: 1.1em
+}
+
+.password-strength {
+    height: 8px;
+    background: #eef3fb;
+    border-radius: 6px;
+    margin-top: 8px;
+    overflow: hidden
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg,#ffd166, #ff6b6b);
+    transition: width .25s ease, background .25s ease
+}
+
+input.invalid {
+    border-color: #e74c3c
+}
+
+input.valid {
+    border-color: #2ecc71
+}
+
+.submit {
+    width: 100%;
+    padding: 12px 14px;
+    background: #2468ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px
+}
+
+.submit:hover {
+    filter: brightness(.97)
+}
+
+/* small responsive tweak */
+@media (max-width:420px) {
+    .card {
+        padding: 20px
+    }
+}
