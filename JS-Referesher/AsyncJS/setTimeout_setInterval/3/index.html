@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Hide Banner</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #22c55e;
+            color: #052e16;
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: slideDown 0.5s ease;
+        }
+
+        .banner p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .banner button {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #052e16;
+        }
+
+        .progress-bar {
+            position: absolute;
+            top: 45.5px;
+            left: 1px;
+            width: 100%;
+            height: 10px;
+            background: #548a4fda;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #19d432, #4ade80);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+        }
+        @keyframes slideUp{
+            from{
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+            to{
+                opacity: 0;
+                transform: translate(-50%, -20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner" id="banner">
+        <p>This banner goes out of screen after <span id = "count">3<span> seconds</p>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <button id="closeBtn">x</button>
+    </div>
+
+</body>
+<script src = "script.js"></script>
+</html>
