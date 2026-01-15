@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="form">
+                <h2>New Call</h2>
+                <label for="form-input-url">Image URL</label>
+                <input class="form-input" id="form-input-url" type="url" placeholder="Enter image URL">
+
+                <label for="form-input-name">Full Name</label>
+                <input class="form-input" id="form-input-name" type="text" placeholder="Enter full name">
+
+                <label for="form-input-hometown">Home Town</label>
+                <input class="form-input" id="form-input-hometown" type="text" placeholder="Enter home town">
+
+                <label for="form-input-purpose">Purpose</label>
+                <input class="form-input" id="form-input-purpose" type="text"
+                    placeholder="e.g., Quick appointment note">
+
+                <div class="category">
+                    <label>Category</label>
+
+                    <div class="category-options">
+
+                        <label class="tag emergency">
+                            <input type="checkbox" checked>
+                            <span class="check">✓</span>
+                            Emergency
+                        </label>
+
+                        <label class="tag important">
+                            <input type="checkbox">
+                            <span class="check">✓</span>
+                            Important
+                        </label>
+
+                        <label class="tag urgent">
+                            <input type="checkbox">
+                            <span class="check">✓</span>
+                            Urgent
+                        </label>
+
+                        <label class="tag norush">
+                            <input type="checkbox">
+                            <span class="check">✓</span>
+                            No Rush
+                        </label>
+
+                    </div>
+                </div>
+
+
+                <button id="createNote-btn">Create Note</button>
+                <button id="close-btn">Close</button>
+            </form>
+        </div>
+
+        <div class="call-ui">
+
+    <div class="floating-controls">
+        <button>+</button>
+        <button>↑</button>
+        <button>↓</button>
+    </div>
+
+    <div class="call-card">
+
+        <div class="avatar">
+            <img src="https://i.pravatar.cc/100?img=12">
+        </div>
+
+        <div class="info">
+            <h3>John Doe</h3>
+            <p>
+                Home town
+                <span>Singapore</span>
+            </p>
+            <small>
+                Bookings
+                <span>3 times</span>
+            </small>
+        </div>
+
+        <div class="actions">
+            <button class="call">📞 Call</button>
+            <button class="msg">Message</button>
+        </div>
+
+    </div>
+
+    <div class="status-dots">
+        <span class="dot black"></span>
+        <span class="dot purple"></span>
+        <span class="dot orange"></span>
+        <span class="dot green"></span>
+    </div>
+
+</div>
+
+    </div>
+</body>
+
+</html>

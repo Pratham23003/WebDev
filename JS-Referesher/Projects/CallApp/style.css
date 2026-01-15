@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+.container{
+    max-width: 580px;
+}
+#form{
+    display: none;
+    flex-direction: column;
+    gap: 0.7rem;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.form-input{
+    padding: 0.7rem;
+    outline: #fff;
+    border: 2.5px solid;
+    border-color: #f1f1f1;
+    border-radius: 1rem;
+}
+.form-input:active{
+    border: #e4dfdf 2px solid;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* ===== CATEGORY TAGS ===== */
+
+.category-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Hide checkbox */
+.category-options input {
+    display: none;
+}
+
+/* Tag base */
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid;
+    background: white;
+    transition: 0.2s ease;
+}
+
+/* Check icon */
+.tag .check {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+/* -------- COLORS -------- */
+
+.emergency { border-color: #ff4d4d; color: #ff4d4d; }
+.important { border-color: #ff9f43; color: #ff9f43; }
+.urgent    { border-color: #7d4cff; color: #7d4cff; }
+.norush    { border-color: #999; color: #555; }
+
+/* background when checked */
+.tag:has(input:checked) {
+    background: #f9f9f9;
+}
+
+/* check box colors */
+.emergency .check { background: #ff4d4d; }
+.important .check { background: #ff9f43; }
+.urgent .check { background: #7d4cff; }
+.norush .check { background: #999; }
+
+/* unchecked state */
+.tag:not(:has(input:checked)) .check {
+    background: #e5e5e5;
+    color: transparent;
+}
+
+/* hover */
+.tag:hover {
+    transform: scale(1.05);
+}
+
+button{
+    padding: 0.8rem;
+    border-radius: 2rem;
+    border: 3px solid #f1f1f1;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+button:hover{
+    transform: scale(1.07);
+}
+#createNote-btn{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+#close-btn{
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: 500;
+}
+/* ===== CALL UI ===== */
+
+.call-ui {
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Floating buttons */
+.floating-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.floating-controls button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/* Call card */
+.call-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    width: 320px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Avatar */
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Info */
+.info h3 {
+    font-size: 1rem;
+}
+
+.info p,
+.info small {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+/* Meta */
+.meta {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Actions */
+.actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actions button {
+    flex: 1;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions .call {
+    background: black;
+    color: white;
+}
+
+.actions .msg {
+    background: #eee;
+}
+
+/* Status dots */
+.status-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.black { background: black; }
+.purple { background: #7d4cff; }
+.orange { background: #ff9f43; }
+.green { background: #1dd1a1; }
