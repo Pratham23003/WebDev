@@ -40,7 +40,6 @@ body{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://plus.unsplash.com/premium_photo-1679692887717-dc7f5d090271?q=80&w=77&auto=format');
     background-size: cover;
     background-position: bottom;
     filter: blur(10px);

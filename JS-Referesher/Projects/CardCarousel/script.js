@@ -1,33 +1,98 @@
-const users = [
+let users = [
   {
-    name: "Aarohi Malhotra",
-    pic: "https://i.pinimg.com/736x/2a/3f/1b/2a3f1b6d2f0a1d2b3c4e5f6a7b8c9d0e.jpg",
-    bio: "soft heart, sharp mind ✨ | poetry & playlists"
+    name: "amisha rathore",
+    pic: "https://i.pinimg.com/736x/cd/9b/1c/cd9b1cf5b96e8300751f952488d6c002.jpg",
+    bio: "silent chaos in a loud world 🌑🖤 | not for everyone",
   },
   {
-    name: "Rhea Kapoor",
-    pic: "https://i.pinimg.com/736x/9f/4b/6c/9f4b6c3d2a1e5f7b8c9d0a2b3e4f6d7.jpg",
-    bio: "living in pastel dreams 🌸 | late night thinker"
+    name: "amita mehta",
+    pic: "https://i.pinimg.com/736x/1f/2f/85/1f2f856bf3a020ed8ee9ecb3306ae074.jpg",
+    bio: "main character energy 🎬 | coffee > everything ☕✨",
   },
   {
-    name: "Nisha Verma",
-    pic: "https://i.pinimg.com/736x/5e/1a/7d/5e1a7d3c9b0a2f4e6d8b1c7a5f9e3d.jpg",
-    bio: "chaos with a touch of class 💄 | coffee over everything"
+    name: "isha oberoi",
+    pic: "https://i.pinimg.com/736x/23/48/7e/23487ef1268cfe017047a0640318c0d0.jpg",
+    bio: "walking through dreams in doc martens 💭🖤 | late night thinker",
   },
   {
-    name: "Kritika Sharma",
-    pic: "https://i.pinimg.com/736x/8c/2d/9e/8c2d9e1a5b6c3f7d4e0b9a8d2c1f6.jpg",
-    bio: "glam on the outside, depth on the inside ✨"
+    name: "Ojin Oklawa",
+    pic: "https://i.pinimg.com/736x/01/be/94/01be94b0b5bf03a50b5d6c4bfec78063.jpg",
+    bio: "too glam to give a damn 💅 | filter free soul",
   },
   {
-    name: "Mehak Arora",
-    pic: "https://i.pinimg.com/736x/4b/7c/2a/4b7c2a9d6e1f8c5b0a3d7f2e9c4a.jpg",
-    bio: "quiet vibes, loud dreams 🌙 | not for everyone"
+    name: "diya bansal",
+    pic: "https://i.pinimg.com/736x/74/b0/67/74b067e6c5ece09d99f68c42c5f6754e.jpg",
+    bio: "a little chaos, a lot of art 🎨✨ | just vibes",
   },
   {
-    name: "Tanya Bansal",
-    pic: "https://i.pinimg.com/736x/1d/6f/3c/1d6f3c7a2b8e9d0c4f5a6b1e3a7.jpg",
-    bio: "too real for fake energy 🔥 | vibes only"
-  }
+    name: "tanay rawat",
+    pic: "https://i.pinimg.com/736x/9b/78/b9/9b78b95425278ee37e88869b8c5fb2c6.jpg",
+    bio: "don’t text, just vibe 🪩 | soft heart, sharp mind",
+  },
+  {
+    name: "mohit chhabra",
+    pic: "https://i.pinimg.com/736x/22/8b/cf/228bcf5a0800f813cd1744d4ccbf01ea.jpg",
+    bio: "aesthetic overload 📸🕊️ | living in lowercase",
+  },
 ];
 
+function showUsers(arr) {
+  arr.forEach(function (user) {
+    // Create outer card div
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    // Create image
+    const img = document.createElement("img");
+    img.src = user.pic;
+    img.classList.add("bg-img");
+
+    // Create blurred-layer div
+    const blurredLayer = document.createElement("div");
+    blurredLayer.style.backgroundImage = `url(${user.pic})`;
+    blurredLayer.classList.add("blurred-layer");
+
+    // Create content div
+    const content = document.createElement("div");
+    content.classList.add("content");
+
+    // Create h3 and paragraph
+    const heading = document.createElement("h3");
+    heading.textContent = user.name;
+
+    const para = document.createElement("p");
+    para.textContent = user.bio;
+
+    // Append heading and paragraph to content
+    content.appendChild(heading);
+    content.appendChild(para);
+
+    // Append all to card
+    card.appendChild(img);
+    card.appendChild(blurredLayer);
+    card.appendChild(content);
+
+    // Finally, append card to the body or any container
+    document.querySelector(".cards").appendChild(card);
+  });
+}
+
+showUsers(users);
+
+let input = document.querySelector('.inp');
+input.addEventListener("input", (user)=>{
+  let searchResult = users.filter((user)=>{
+    return user.name.startsWith(input.value);
+  })
+  document.querySelector(".cards").innerHTML = "";
+  showUsers(searchResult);
+  console.log(searchResult);
+  if(searchResult.length == 0){
+    console.log("no user found");
+    let errorDiv = document.createElement("div");
+    errorDiv.textContent = "No User Found";
+    errorDiv.style.color = "#3a3a3a";
+    document.querySelector(".cards").innerHTML = "";
+    document.querySelector('.cards').appendChild(errorDiv);
+  }
+});
