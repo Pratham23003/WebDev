@@ -21,16 +21,16 @@
             <form id="form">
                 <h2>New Call</h2>
                 <label for="form-input-url">Image URL</label>
-                <input class="form-input" id="form-input-url" type="url" placeholder="Enter image URL">
+                <input required class="form-input" id="form-input-url" type="url" placeholder="Enter image URL">
 
                 <label for="form-input-name">Full Name</label>
-                <input class="form-input" id="form-input-name" type="text" placeholder="Enter full name">
+                <input required class="form-input" id="form-input-name" type="text" placeholder="Enter full name">
 
                 <label for="form-input-hometown">Home Town</label>
-                <input class="form-input" id="form-input-hometown" type="text" placeholder="Enter home town">
+                <input required class="form-input" id="form-input-hometown" type="text" placeholder="Enter home town">
 
                 <label for="form-input-purpose">Purpose</label>
-                <input class="form-input" id="form-input-purpose" type="text"
+                <input required class="form-input" id="form-input-purpose" type="text"
                     placeholder="e.g., Quick appointment note">
 
                 <div class="category">
@@ -71,51 +71,54 @@
             </form>
         </div>
 
-        <div class="call-ui">
+        <div id = "call-ui" class="call-ui">
 
             <div class="floating-controls">
-                <button>+</button>
-                <button>↑</button>
-                <button>↓</button>
+                <button id = "add-contact"><i class="fa-solid fa-plus"></i></button>
+                <button id = "up"><i class="fa-solid fa-arrow-up"></i></button>
+                <button id = "down"><i class="fa-solid fa-arrow-down"></i></button>
             </div>
 
-            <div class="call-card">
+            <div class="cards-container">
+                <div class="call-card">
 
-                <div class="avatar">
-                    <img src="https://i.pravatar.cc/100?img=12">
-                </div>
-
-                <div class="info">
-                    <h3>John Doe</h3>
-                    <div class="info-container">
-                        <p>
-                            Home town
-                            <span>Singapore</span>
-                        </p>
-                        <small>
-                            Bookings
-                            <span>3 times</span>
-                        </small>
+                    <div class="avatar">
+                        <img src="https://i.pravatar.cc/100?img=12">
                     </div>
-                </div>
 
-                <div class="actions">
-                    <button class="call"><i class = "fas fa-phone"></i> Call</button>
-                    <button class="msg"><i class = "fas fa-message"></i> Message</button>
-                </div>
+                    <div class="info">
+                        <h3>John Doe</h3>
+                        <div class="info-container">
+                            <p>
+                                Home town
+                                <span>Singapore</span>
+                            </p>
+                            <small>
+                                Bookings
+                                <span>3 times</span>
+                            </small>
+                        </div>
+                    </div>
 
+                    <div class="actions">
+                        <button class="call"><i class = "fas fa-phone"></i> Call</button>
+                        <button class="msg"><i class = "fas fa-message"></i> Message</button>
+                    </div>
+
+                </div>
+                
             </div>
-
+            
             <div class="status-dots">
                 <span class="dot black"></span>
                 <span class="dot purple"></span>
                 <span class="dot orange"></span>
                 <span class="dot green"></span>
-            </div>
-
+            </div>    
+                    
         </div>
 
     </div>
 </body>
-
+<script src="script.js"></script>
 </html>

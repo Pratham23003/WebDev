@@ -1,20 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
+
+body {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     background: #f1f1f1;
 }
-.container{
+
+.container {
     max-width: 580px;
 }
-#form{
+
+#form {
     display: none;
     flex-direction: column;
     gap: 0.7rem;
@@ -23,21 +26,25 @@ body{
     padding: 2rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
-.form-input{
+
+.form-input {
     padding: 0.7rem;
     outline: #fff;
     border: 2.5px solid;
     border-color: #f1f1f1;
     border-radius: 1rem;
 }
-.form-input:active{
+
+.form-input:active {
     border: #e4dfdf 2px solid;
 }
-.category{
+
+.category {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 /* ===== CATEGORY TAGS ===== */
 
 .category-options {
@@ -79,10 +86,25 @@ body{
 
 /* -------- COLORS -------- */
 
-.emergency { border-color: #ff4d4d; color: #ff4d4d; }
-.important { border-color: #ff9f43; color: #ff9f43; }
-.urgent    { border-color: #7d4cff; color: #7d4cff; }
-.norush    { border-color: #999; color: #555; }
+.emergency {
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+}
+
+.important {
+    border-color: #ff9f43;
+    color: #ff9f43;
+}
+
+.urgent {
+    border-color: #7d4cff;
+    color: #7d4cff;
+}
+
+.norush {
+    border-color: #999;
+    color: #555;
+}
 
 /* background when checked */
 .tag:has(input:checked) {
@@ -90,10 +112,21 @@ body{
 }
 
 /* check box colors */
-.emergency .check { background: #ff4d4d; }
-.important .check { background: #ff9f43; }
-.urgent .check { background: #7d4cff; }
-.norush .check { background: #999; }
+.emergency .check {
+    background: #ff4d4d;
+}
+
+.important .check {
+    background: #ff9f43;
+}
+
+.urgent .check {
+    background: #7d4cff;
+}
+
+.norush .check {
+    background: #999;
+}
 
 /* unchecked state */
 .tag:not(:has(input:checked)) .check {
@@ -106,32 +139,50 @@ body{
     transform: scale(1.05);
 }
 
-button{
+button {
     padding: 0.8rem;
     border-radius: 2rem;
     border: 3px solid #f1f1f1;
     cursor: pointer;
     transition: all 0.25s;
 }
-button:hover{
+
+button:hover {
     transform: scale(1.07);
 }
-#createNote-btn{
+
+#createNote-btn {
     background-color: black;
     color: white;
     font-weight: 600;
 }
-#close-btn{
+
+#close-btn {
     background-color: #ff4d4d;
     color: white;
     font-weight: 500;
 }
+
 /* ===== CALL UI ===== */
 
 .call-ui {
     position: relative;
     margin-bottom: 2rem;
     display: flex;
+    gap: 2rem;
+    max-height: 70vh;
+    align-items: flex-start;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/* Cards container */
+.call-ui>.cards-container {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -140,8 +191,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 9.1rem;
 }
 
 .floating-controls button {
@@ -150,21 +200,47 @@ button:hover{
     border-radius: 50%;
     border: none;
     background: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    align-items: center;
 }
 
 /* Call card */
 .call-card {
+    position: absolute;
     background: white;
     padding: 1.5rem;
     border-radius: 1.2rem;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     width: 320px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 1rem;
     align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease, z-index 0.3s ease;
+}
+
+/* Stacking effect */
+.call-card:nth-child(1) {
+    z-index: 3;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.call-card:nth-child(2) {
+    z-index: 2;
+    transform: translateY(10px) scale(0.98);
+    opacity: 0.9;
+}
+
+.call-card:nth-child(3) {
+    z-index: 1;
+    transform: translateY(20px) scale(0.96);
+    opacity: 0.7;
+}
+
+.call-card:nth-child(n+4) {
+    display: none;
 }
 
 /* Avatar */
@@ -175,17 +251,19 @@ button:hover{
     object-fit: cover;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
 }
-.info-container{
+
+.info-container {
     display: flex;
     flex-direction: column;
     gap: 5px;
     /* background-color: #1dd1a1; */
 }
+
 /* Info */
 .info h3 {
     font-size: 1.4rem;
@@ -194,7 +272,7 @@ button:hover{
 .info p,
 .info small {
     font-size: 0.8rem;
-    
+
 }
 
 /* Meta */
@@ -206,8 +284,8 @@ button:hover{
 
 /* Actions */
 .actions {
-    grid-column: 1 / -1;
     display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-top: 10px;
 }
@@ -234,8 +312,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 9.3rem;
 }
 
 .dot {
@@ -246,7 +323,18 @@ button:hover{
     cursor: pointer;
 }
 
-.black { background: black; }
-.purple { background: #7d4cff; }
-.orange { background: #ff9f43; }
-.green { background: #1dd1a1; }
+.black {
+    background: black;
+}
+
+.purple {
+    background: #7d4cff;
+}
+
+.orange {
+    background: #ff9f43;
+}
+
+.green {
+    background: #1dd1a1;
+}
