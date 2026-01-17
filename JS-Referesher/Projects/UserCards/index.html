@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>User Cards</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Inter", system-ui, ans-serifs;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #222, #000);
+            color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* ---------- Form ---------- */
+
+        .form-container {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(40, 40, 40, 0.9);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            margin-bottom: 50px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #cfcfcf;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            background: #3a3a3a;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 12px;
+            color: #fff;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        form textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            outline: none;
+            background: #444;
+        }
+
+        form button {
+            width: 100%;
+            background: #2d2d2d;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        form button:hover {
+            background: #3a3a3a;
+        }
+
+        /* ---------- Cards ---------- */
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .user-card {
+            background: rgba(40, 40, 40, 0.9);
+            border-radius: 16px;
+            padding: 22px 18px;
+            text-align: center;
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .user-card img {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 14px;
+            border: 2px solid #555;
+        }
+
+        .user-card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .user-card .role {
+            font-size: 13px;
+            color: #b0b0b0;
+            margin: 4px 0 10px;
+        }
+
+        .user-card p {
+            font-size: 13px;
+            color: #d0d0d0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Add User Form -->
+    <div class="form-container">
+        <h2>Add User</h2>
+
+        <form id="userForm">
+            <label>Name</label>
+            <input id = "nameInput" required type="text" placeholder="Enter name" />
+
+            <label>Role</label>
+            <input id = "roleInput" required type="text" placeholder="Enter role" />
+
+            <label>Bio</label>
+            <textarea id = "bioInput" placeholder="Short bio"></textarea>
+
+            <label>Photo URL</label>
+            <input id = "photoInput" required type="text" placeholder="Image URL" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards-container" id="cardsContainer">
+        
+        <!-- <div class="user-card">
+            <img src="https://i.pinimg.com/474x/8e/7f/f1/8e7ff1a2483792e54a73a363bed54ee1.jpg" alt="User photo" height="120px" width="120px"/>
+            <h3>John Doe</h3>
+            <div class="role">Frontend Developer</div>
+            <p>Loves building beautiful UIs and learning new technologies.</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pinimg.com/736x/ff/c1/55/ffc1557c512acc1bd266e309f918c49b.jpg" alt="User photo" height="120px" width="120px"/>
+            <h3>Dohn Joe</h3>
+            <div class="role">Backend Developer</div>
+            <p>Loves building backend learning new technologies.</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pinimg.com/736x/48/30/6b/48306ba1de3957039b3809a0e69fb81d.jpg" alt="User photo" height="120px" width="120px"/>
+            <h3>Hon Doe</h3>
+            <div class="role">UI/UX Developer</div>
+            <p>Loves building beautiful UIs</p>
+        </div>
+    </div> -->
+
+</body>
+<script src = "script.js"></script>
+</html>
