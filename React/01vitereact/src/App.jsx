@@ -3,7 +3,7 @@ function App() {
   return (
     <>
     <Chai/>
-    <h1 className = "nigga">Hello Nigga</h1>
+    <h1>Hello World</h1>
     </>
   )
 }
