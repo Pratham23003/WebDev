@@ -1,16 +1,97 @@
-# React + Vite
+# MovieApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple movie discovery app that helps you find **movies**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Instant Movie Search** with debounced input
+- **Trending Movies** based on real user searches
+- **Analytics** using Appwrite TablesDB
+- **Clean UI** with a dark theme
+- **Fast & Responsive** (built with Vite + React)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Trending results are driven by **what users actually search**, not by pre-defined popularity metrics.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How Trending Works
+
+Every time a user searches for a movie:
+
+- The search is tracked using **Appwrite TablesDB**
+- Each movie is uniquely identified by its **TMDB movie ID**
+- Search counts are incremented
+- Trending movies get ranked by **real usage data**
+
+---
+
+## Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- TMDB API
+
+### Backend / Analytics
+- Appwrite (TablesDB)
+- Serverless search analytics
+- Data normalization using `movie_id`
+
+### Deployment
+- Vercel
+
+---
+
+## Local Setup
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/Pratham23003/movieAPP-React.git
+cd movieapp
+```
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Create `env.local` 
+```
+VITE_TMDB_API_KEY=your_tmdb_api_key
+VITE_APPWRITE_ENDPOINT=https://fra.cloud.appwrite.io/v1
+VITE_APPWRITE_PROJECT_ID=your_project_id
+VITE_APPWRITE_DB_ID=your_database_id
+VITE_APPWRITE_TABLE_NAME=your_table_name
+```
+
+### 4. Run the app 
+```bash
+npm run dev
+```
+---
+
+## My Learnings and challenges
+### Learnings
+
+While building this project, I learned:
+
+- Implement debounced search to improve performance and user experience
+- How's and What's of AppWrite and how to work with Appwrite TablesDB
+- The importance of data normalization (`movie_id` over search terms)
+- Debugging backend issues using logs instead of assumptions
+- Different React Hooks
+
+
+### Challenges
+
+- Handling breaking changes and deprecated APIs in Appwrite
+- Understanding differences between Documents DB and TablesDB
+- Debugging ID-related issues (`$id` vs `$Id`)
+- Preventing duplicate trending entries caused by partial or inconsistent searches
+- Ensuring search counts updated correctly for previously searched movies
+- Avoiding unnecessary analytics updates caused by rapid user input
+
+
