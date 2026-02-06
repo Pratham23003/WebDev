@@ -51,6 +51,7 @@ function App() {
       } 
       else {
         setMovieList(data.results || []);
+        console.log(data);
         if(query && data.results.length > 0){
           await updateSearchCount(query, data.results[0]);
         }
@@ -92,10 +93,9 @@ function App() {
 
       <div className="wrapper">
         <header>
-          <img src="./hero.png" alt="Hero Banner" />
+          
           <h1 className="text-5xl font-semibold">
-            Find <span className="text-gradient">Movies</span> You'll Enjoy
-            Without the Hassle
+            Your Next Favorite <span className="text-gradient">Movie</span> Awaits.
           </h1>
 
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
