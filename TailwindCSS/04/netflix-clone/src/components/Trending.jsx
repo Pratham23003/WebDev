@@ -1,0 +1,139 @@
+import { useRef } from "react";
+import MovieCard from "./MovieCard";
+
+function Trending() {
+  const scrollRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      // Scroll left by the width of about 2-3 cards
+      scrollRef.current.scrollBy({ left: -600, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      // Scroll right by the width of about 2-3 cards
+      scrollRef.current.scrollBy({ left: 600, behavior: "smooth" });
+    }
+  };
+
+  const movies = [
+    {
+      id: "1",
+      img: "/1.webp",
+      alt: "1",
+    },
+    {
+      id: "2",
+      img: "/2.webp",
+      alt: "2",
+    },
+    {
+      id: "3",
+      img: "/3.webp",
+      alt: "3",
+    },
+    {
+      id: "4",
+      img: "/4.webp",
+      alt: "4",
+    },
+    {
+      id: "5",
+      img: "/5.webp",
+      alt: "5",
+    },
+    {
+      id: "6",
+      img: "/6.webp",
+      alt: "6",
+    },
+    {
+      id: "7",
+      img: "/7.webp",
+      alt: "7",
+    },
+    {
+      id: "8",
+      img: "/8.webp",
+      alt: "8",
+    },
+    {
+      id: "9",
+      img: "/9.webp",
+      alt: "9",
+    },
+    {
+      id: "10",
+      img: "/10.webp",
+      alt: "10",
+    },
+  ];
+
+  return (
+    <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center w-[1280px]">
+        <div className="px-4 mt-8 md:px-12 text-white w-full relative group">
+          <h2 className="text-3xl font-semibold mb-4 text-gray-100">
+            Trending Now
+          </h2>
+
+          {/* Left Scroll Arrow */}
+          <button
+            onClick={scrollLeft}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-40 bg-black/50 hover:bg-black/80 text-white w-12 h-full max-h-[250px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-r-md cursor-pointer hidden md:flex"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="currentColor"
+              className="w-8 h-8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+
+          {/* carousel track */}
+          <div
+            ref={scrollRef}
+            className="flex overflow-x-auto gap-6 scrollbar-hide pb-4 scroll-smooth"
+          >
+            {movies.map((movie) => (
+              <MovieCard key={movie.id} movie={movie}></MovieCard>
+            ))}
+          </div>
+
+          {/* Right Scroll Arrow */}
+          <button
+            onClick={scrollRight}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-40 bg-black/50 hover:bg-black/80 text-white w-12 h-full max-h-[250px] opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-l-md cursor-pointer hidden md:flex"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="currentColor"
+              className="w-8 h-8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Trending;

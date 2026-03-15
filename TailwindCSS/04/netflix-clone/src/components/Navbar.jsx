@@ -9,7 +9,7 @@ function Navbar() {
         <div className="flex items-center gap-4">
           <Dropdown></Dropdown>
 
-          <button className="bg-red-600 px-4 py-1 rounded text-white font-sans cursor-pointer">
+          <button className="bg-red-600 px-4 py-1 rounded text-white font-sans cursor-pointer hover:bg-red-800">
             Sign In
           </button>
         </div>

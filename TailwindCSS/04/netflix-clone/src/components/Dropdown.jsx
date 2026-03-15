@@ -4,7 +4,7 @@ const Dropdown = () => {
   const [open, setOpen] = useState(false);
   const [lang, setLang] = useState("English");
   return (
-    <div className="relative text-white cursor-pointer hover:border-2 rounded">
+    <div className="relative text-white cursor-pointer focus:border-white focus:border-2 focus:outline-none">
       {/* Button */}
       <div
         onClick={() => setOpen(!open)}
