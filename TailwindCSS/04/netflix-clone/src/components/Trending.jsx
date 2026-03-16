@@ -82,7 +82,7 @@ function Trending() {
           {/* Left Scroll Arrow */}
           <button
             onClick={scrollLeft}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-40 bg-black/50 hover:bg-black/80 text-white w-12 h-full max-h-[250px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-r-md cursor-pointer hidden md:flex"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-40 bg-gray-900 hover:bg-gray-950 text-white w-6 h-30 max-h-[250px] opacity-95 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-md cursor-pointer md:flex"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ function Trending() {
           {/* carousel track */}
           <div
             ref={scrollRef}
-            className="flex overflow-x-auto gap-6 scrollbar-hide pb-4 scroll-smooth"
+            className="flex overflow-x-auto gap-6 hide-scrollbar pb-4 scroll-smooth p-2"
           >
             {movies.map((movie) => (
               <MovieCard key={movie.id} movie={movie}></MovieCard>
@@ -113,7 +113,7 @@ function Trending() {
           {/* Right Scroll Arrow */}
           <button
             onClick={scrollRight}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-40 bg-black/50 hover:bg-black/80 text-white w-12 h-full max-h-[250px] opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-l-md cursor-pointer hidden md:flex"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-40 bg-gray-900 hover:bg-gray-950 text-white w-6 h-30 max-h-[250px] opacity-95 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-md cursor-pointer md:flex"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
