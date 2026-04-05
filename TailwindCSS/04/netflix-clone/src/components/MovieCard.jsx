@@ -2,7 +2,7 @@ const MovieCard = ({ movie }) => {
   return (
     <div>
 
-      <p className="relative text-black top-65 right-3 h-10 w-10 z-[1] text-8xl font-extrabold stroke-white">
+      <p className="relative text-black top-65 right-3 h-10 w-10 z-[1] text-8xl font-extrabold [-webkit-text-stroke:1px_white]">
         {movie.id}
       </p>
 
@@ -19,3 +19,4 @@ const MovieCard = ({ movie }) => {
 };
 
 export default MovieCard;
+

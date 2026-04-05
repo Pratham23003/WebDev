@@ -75,7 +75,7 @@ function Trending() {
     <div className="flex items-center justify-center">
       <div className="flex items-center justify-center w-[1280px]">
         <div className="px-4 mt-8 md:px-12 text-white w-full relative group">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-100">
+          <h2 className="text-3xl font-semibold mb-2 text-gray-100">
             Trending Now
           </h2>
 
@@ -103,7 +103,7 @@ function Trending() {
           {/* carousel track */}
           <div
             ref={scrollRef}
-            className="flex overflow-x-auto gap-6 hide-scrollbar pb-4 scroll-smooth p-2"
+            className="flex overflow-x-auto overflow-y-hidden gap-6 hide-scrollbar pb-4 scroll-smooth p-2"
           >
             {movies.map((movie) => (
               <MovieCard key={movie.id} movie={movie}></MovieCard>
