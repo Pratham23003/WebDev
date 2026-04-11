@@ -39,7 +39,7 @@ const FAQ = () => {
   ];
 
   return (
-  <div className="max-w-[1200px] mx-auto w-full mt-20 mb-2 px-4 md:px-0">
+  <div className="max-w-[1200px] mx-auto w-full mt-10 mb-2 px-4 md:px-0">
     <div className="mt-8 ">
             <h2 className="text-3xl font-semibold mb-4 text-gray-100">
               Frequently Asked Questions

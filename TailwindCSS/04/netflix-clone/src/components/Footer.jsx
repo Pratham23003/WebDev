@@ -8,26 +8,26 @@ const Footer = () => {
         <h6 className="text-md mb-4 text-neutral-400">
           Questions? Call  
         </h6>
-        <span className="text-neutral-400 underline "> 000-800-919-1743</span>
+        <span className="text-neutral-400 underline cursor-pointer"> 000-800-919-1743</span>
       </div>
 
       <div className="mt-4 gap-3">
-        <div class="grid grid-cols-4 gap-4 text-neutral-400 text-sm underline">
-            <div>FAQ</div>
-            <div>Help Centre</div>
-            <div>Account</div>
-            <div>Media Centre</div>
-            <div>Investor Relations</div>
-            <div>Jobs</div>
-            <div>Ways to Watch</div>
-            <div>Terms of Use</div>
-            <div>Privacy</div>
-            <div>Cookie Preferences</div>
-            <div>Corporate Information</div>
-            <div>Contact Us</div>
-            <div>Speed Test</div>
-            <div>Legal Notices</div>
-            <div>Only on Netflix</div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-neutral-400 text-sm underline">
+            <div className="cursor-pointer">FAQ</div>
+            <div className="cursor-pointer">Help Centre</div>
+            <div className="cursor-pointer">Account</div>
+            <div className="cursor-pointer">Media Centre</div>
+            <div className="cursor-pointer">Investor Relations</div>
+            <div className="cursor-pointer">Jobs</div>
+            <div className="cursor-pointer">Ways to Watch</div>
+            <div className="cursor-pointer">Terms of Use</div>
+            <div className="cursor-pointer">Privacy</div>
+            <div className="cursor-pointer">Cookie Preferences</div>
+            <div className="cursor-pointer">Corporate Information</div>
+            <div className="cursor-pointer">Contact Us</div>
+            <div className="cursor-pointer">Speed Test</div>
+            <div className="cursor-pointer">Legal Notices</div>
+            <div className="cursor-pointer">Only on Netflix</div>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
         <h3>Netflix Clone - Built by <a className="underline" href="https://github.com/Pratham23003">Pratham23</a></h3>
     </div>
 
-    <div className="mt-6 pb-20 text-neutral-400 text-sm">
+    <div className="mt-6 pb-20 text-neutral-400 text-sm ">
         Built by <a className="underline" href="https://github.com/Pratham23003">Pratham23</a> as a CSS learning project. All logos, videos, and trademarks belong to their respective owners and are used here for educational purposes only.    </div>
     </div>
   );

@@ -3,17 +3,17 @@ import React from "react";
 const Reasons = () => {
   return (
     <>
-      <div className="flex items-center justify-center">
-        <div className="flex-col items-center justify-center w-[1280px]">
+      <div className="flex items-center justify-center mt-10">
+        <div className="flex-col items-center justify-center w-full max-w-[1280px]">
           <div className="px-4 mt-8 md:px-12 text-white w-full relative group">
-            <h2 className="text-3xl font-semibold mb-4 text-gray-100">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-100">
               More Reasons to Join
             </h2>
           </div>
 
-          <div className="flex gap-4">
+          <div className="grid grid-cols-1 gap-3 sm:flex sm:gap-4 sm:ml-11 lg:grid-cols-4 px-4 md:px-0 w-full mb-8 ">
             {/* Card1 */}
-            <div className="bg-[linear-gradient(149deg,_#192247_0%,_#210e17_96.86%)] h-[290px] w-[290px] rounded-xl ml-12 p-5">
+            <div className="bg-[linear-gradient(149deg,_#192247_0%,_#210e17_96.86%)] min-h-[290px] sm:w-72 rounded-xl p-5 relative flex flex-col justify-between">
               <div className="text-white">
                 <p className="text-2xl font-medium">Enjoy on your TV</p>
               </div>
@@ -148,7 +148,7 @@ const Reasons = () => {
             </div>
 
             {/* Card2 */}
-            <div className="bg-[linear-gradient(149deg,_#192247_0%,_#210e17_96.86%)] h-[290px] w-[290px] rounded-xl p-5">
+            <div className="bg-[linear-gradient(149deg,_#192247_0%,_#210e17_96.86%)] min-h-[290px] sm:w-72 rounded-xl p-5 relative flex flex-col justify-between">
               <div className="text-white">
                 <p className="text-2xl font-medium">
                   Download your shows to watch offline
@@ -317,7 +317,7 @@ const Reasons = () => {
             </div>
 
             {/* Card3 */}
-            <div className="bg-[linear-gradient(149deg,_#192247_0%,_#210e17_96.86%)] h-[290px] w-[290px] rounded-xl p-5">
+            <div className="bg-[linear-gradient(149deg,_#192247_0%,_#210e17_96.86%)] min-h-[290px] sm:w-72 rounded-xl p-5 relative flex flex-col justify-between">
               <div className="text-white">
                 <p className="text-2xl font-medium">Watch Everywhere</p>
               </div>
@@ -512,7 +512,7 @@ const Reasons = () => {
             </div>
 
             {/* Card4 */}
-            <div className="bg-[linear-gradient(149deg,_#192247_0%,_#210e17_96.86%)] h-[290px] w-[290px] rounded-xl p-3">
+            <div className="bg-[linear-gradient(149deg,_#192247_0%,_#210e17_96.86%)] min-h-[290px] sm:w-72 rounded-xl p-5 relative flex flex-col justify-between">
               <div className="text-white mt-1.5">
                 <p className="text-2xl font-medium">Create profiles for kids</p>
               </div>
