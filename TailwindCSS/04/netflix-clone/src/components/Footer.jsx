@@ -40,7 +40,7 @@ const Footer = () => {
     </div>
 
     <div className="mt-6 pb-20 text-neutral-400 text-sm ">
-        Built by <a className="underline" href="https://github.com/Pratham23003">Pratham23</a> as a CSS learning project. All logos, videos, and trademarks belong to their respective owners and are used here for educational purposes only.    </div>
+        Built by <a className="underline" href="https://github.com/Pratham23003">Pratham23</a> as a React+Tailwind learning project. All logos, videos, and trademarks belong to their respective owners and are used here for educational purposes only.    </div>
     </div>
   );
 };
