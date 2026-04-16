@@ -1,78 +1,22 @@
-import React from 'react'
 import RestaurantCard from './RestaurantCard'
-
+import { resData } from '../utils/utils'
+import { useState } from 'react'
 const Body = () => {
-
-  const resData = 
-  [{
-    id: 1,
-    resName: "Starbucks",
-    resRating : 5.0,
-    foodCategory : "Desserts • Fast Food",
-    priceDetails : "₹900 for two",
-    location: "Ferozpur Road, Ludhiana",
-    distance: 6.7,
-    bgURL: "./startbuck.webp"
-  },
-  {
-    id: 2,
-    resName: "Starbucks",
-    resRating : 5.0,
-    foodCategory : "Desserts • Fast Food",
-    priceDetails : "₹900 for two",
-    location: "Ferozpur Road, Ludhiana",
-    distance: 6.7,
-    bgURL: ""
-  },
-  {
-    id: 3,
-    resName: "Starbucks",
-    resRating : 5.0,
-    foodCategory : "Desserts • Fast Food",
-    priceDetails : "₹900 for two",
-    location: "Ferozpur Road, Ludhiana",
-    distance: 6.7,
-    bgURL: ""
-  },
-  {
-    id: 4,
-    resName: "Starbucks",
-    resRating : 5.0,
-    foodCategory : "Desserts • Fast Food",
-    priceDetails : "₹900 for two",
-    location: "Ferozpur Road, Ludhiana",
-    distance: 6.7,
-    bgURL: ""
-  },
-  {
-    id: 4,
-    resName: "Starbucks",
-    resRating : 5.0,
-    foodCategory : "Desserts • Fast Food",
-    priceDetails : "₹900 for two",
-    location: "Ferozpur Road, Ludhiana",
-    distance: 6.7,
-    bgURL: ""
-  },
-  {
-    id: 4,
-    resName: "Starbucks",
-    resRating : 5.0,
-    foodCategory : "Desserts • Fast Food",
-    priceDetails : "₹900 for two",
-    location: "Ferozpur Road, Ludhiana",
-    distance: 6.7,
-    bgURL: ""
-  }];
+  const [data, setData] = useState(resData);
 
   return (
     <div className='mx-auto flex-col w-[80%]  items-center justify-center overflow-x-scroll'>
         <div id='search-container' className='text-center mx-auto'>
-          Search
+          <button className='filter-btn p-3 bg-gray-100 cursor-pointer mb-2 active:border-1' 
+            onClick={() => {
+              setData(data.filter(item => item.resRating > 4))
+            }}>
+              Top Rated Restaurants
+          </button>
         </div>
 
         <div id='card-container' className="flex gap-5">
-          {resData.map((res) => 
+          {data.map((res) => 
           (
             <RestaurantCard
             key={res.id}
