@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Highlights from './components/Highlights'
 import ProductView from './components/ProductView'
+import Showcase from './components/Showcase'
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/all'
 
@@ -15,6 +16,7 @@ function App() {
       <Hero></Hero>
       <Highlights></Highlights>
       <ProductView></ProductView>
+      <Showcase></Showcase>
     </>
   )
 }
