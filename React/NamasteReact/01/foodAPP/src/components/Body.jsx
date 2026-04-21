@@ -1,9 +1,11 @@
 import RestaurantCard from './RestaurantCard'
 import { API_ENDPOINT } from '../utils/utils'
 import { useEffect, useState } from 'react'
+import Search from './Search'
 
 const Body = () => {
   const [data, setData] = useState([]);
+  const [searchTerm ,setSearchTerm] = useState("");
 
   useEffect(()=>{
     fetchData();
@@ -39,23 +41,12 @@ const Body = () => {
             Discover the best food & drinks
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Explore top-rated restaurants, exclusive offers, and fast delivery to your doorstep.
+            Explore top-rated restaurants, excluve offers, and fast delivery to your doorstep.
           </p>
           
           {/* Search / Filter Container */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-3xl mx-auto">
-            <div className="relative w-full sm:w-2/3">
-              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <svg className="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-              <input 
-                type="text" 
-                placeholder="Search for restaurants or cuisines..." 
-                className="w-full pl-11 pr-4 py-4 rounded-full border-0 ring-1 ring-gray-300 shadow-sm focus:ring-2 focus:ring-orange-500 focus:outline-none transition-shadow text-gray-900"
-              />
-            </div>
+            <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}></Search>
             
             <button 
               className="w-full sm:w-auto px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2"
