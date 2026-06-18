@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Ava Johnson",
+    "email": "ava.johnson@example.com",
+    "age": 29,
+    "role": "product manager"
+  },
+  {
+    "id": 2,
+    "name": "Noah Patel",
+    "email": "noah.patel@example.com",
+    "age": 34,
+    "role": "software engineer"
+  },
+  {
+    "id": 3,
+    "name": "Mia Chang",
+    "email": "mia.chang@example.com",
+    "age": 26,
+    "role": "designer"
+  },
+  {
+    "id": 4,
+    "name": "Liam Brooks",
+    "email": "liam.brooks@example.com",
+    "age": 31,
+    "role": "data analyst"
+  },
+  {
+    "id": 5,
+    "name": "Sophia Martinez",
+    "email": "sophia.martinez@example.com",
+    "age": 27,
+    "role": "support engineer"
+  }
+]
