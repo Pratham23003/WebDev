@@ -1,7 +1,7 @@
 //trying to understand how asnyc and sync operations execute
 const fs = require('fs');
 const https = require('https');
-
+    
 console.log('running synchronusly....');                    //syncrhonous operation
 var a = 120;
 var b = 200;
